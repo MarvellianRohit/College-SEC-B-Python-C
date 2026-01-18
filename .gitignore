@@ -1,0 +1,20 @@
+# Compiled C binaries
+emp
+emp2
+mallocprogram
+struct
+*.o
+*.out
+
+# System files
+.DS_Store
+
+# IDE settings
+.vscode/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Notebook checkpoints
+.ipynb_checkpoints/
