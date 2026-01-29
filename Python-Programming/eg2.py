@@ -27,6 +27,7 @@ print(type(li))
 
 #print(li + a) #If just this line written there will be a error
 
+
 print()
 
 
