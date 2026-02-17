@@ -3,8 +3,16 @@ emp
 emp2
 mallocprogram
 struct
+circularqueue
+circularqueue_refactored
+brackets
+postfix
+shutdown
 *.o
 *.out
+*
+!*.*
+!*/
 
 # System files
 .DS_Store
