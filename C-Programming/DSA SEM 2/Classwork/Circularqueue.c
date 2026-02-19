@@ -63,34 +63,28 @@ void dequeue() {
 void display() {
   // Check for Underflow (Empty Queue) before attempting to traverse
   if (front == -1) {
-    printf(
-        "Queue is currently empty (Underflow situation).\n"); // Notify that no
-                                                              // elements exist
+    printf("Queue is currently empty (Underflow situation).\n");
   } else {
-    // Print a descriptive header for the queue elements
     printf("Current Queue Elements: ");
 
-    // Temporary variable 'i' to traverse the queue starting from the front
-    // pointer
-    int i = front;
-
-    // Loop through the circular array until we reach the rear pointer
-    while (1) {
-      // Print the element at the current circular index 'i'
-      printf("%d ", queue[i]);
-
-      // If the current index 'i' matches the rear pointer, we have printed all
-      // elements
-      if (i == rear) {
-        break; // Exit the loop
+    if (front <= rear) {
+      // Case 1: Elements are in a single linear block (Front is before or at
+      // Rear)
+      for (int i = front; i <= rear; i++) {
+        printf("%d ", queue[i]);
       }
-
-      // Move 'i' to the next circular index using the modulo operator
-      i = (i + 1) % SIZE;
+    } else {
+      // Case 2: Elements are wrapped around the end of the array (Front is
+      // after Rear) First loop: from the 'front' pointer to the literal end of
+      // the array
+      for (int i = front; i < SIZE; i++) {
+        printf("%d ", queue[i]);
+      }
+      // Second loop: from the start of the array back to the 'rear' pointer
+      for (int i = 0; i <= rear; i++) {
+        printf("%d ", queue[i]);
+      }
     }
-
-    // Print a newline character to clean up the formatting after the list of
-    // elements
     printf("\n");
   }
 }
