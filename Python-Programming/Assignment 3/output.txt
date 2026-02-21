@@ -1,0 +1,24 @@
+=== Running 1_punchline.py ===
+Good Morning
+Press Enter to continue...How are you
+
+=== Running 2_average_temp.py ===
+Enter temperature for day 1: Enter temperature for day 2: Enter temperature for day 3: Enter temperature for day 4: Enter temperature for day 5: Enter temperature for day 6: Enter temperature for day 7: The average temperature of the week is: 21.29
+
+=== Running 3_bmi_calculator.py ===
+Enter weight in kilograms (kg): Enter height in meters (m): The Body Mass Index (BMI) is: 22.49
+
+=== Running 4_digit_sequence.py ===
+Enter a single digit (1-7): 456
+
+=== Running 5_reverse_number.py ===
+Enter a 3-digit number: The reversed number is: 987
+
+=== Running 6_check_same_numbers.py ===
+Enter the first number: Enter the second number: Enter the third number: All three numbers are the same.
+
+=== Running 7_quadratic_equation.py ===
+Enter a: Enter b: Enter c: Roots are: 3.0 and 2.0
+
+=== Running 8_equation.py ===
+Enter x: Enter y: Enter z: The result is: 127.84955592153875
