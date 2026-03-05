@@ -2,3 +2,8 @@
 
 message = input("Enter a welcome message: ")
 print("Welcome Message:", message)
+
+'''
+Output:
+Enter a welcome message: Welcome Message: 
+'''

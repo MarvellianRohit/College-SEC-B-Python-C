@@ -31,3 +31,9 @@ int main() {
   // Return 0 to indicate successful program execution
   return 0;
 }
+/*
+Output:
+
+Enter the employee code: 
+Enter the employee name: 
+Code: 0 Name: 1*/

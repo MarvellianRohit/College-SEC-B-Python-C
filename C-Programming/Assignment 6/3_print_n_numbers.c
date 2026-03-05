@@ -29,3 +29,9 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter the value of N: First 0 natural numbers are:
+
+*/

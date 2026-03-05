@@ -31,3 +31,9 @@ int main() {
   // Return 0 to indicate successful execution
   return 0;
 }
+
+/*
+Output:
+Enter the radius of the circle: Area of the circle: 0.00
+Perimeter of the circle: 0.00
+*/

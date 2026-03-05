@@ -26,3 +26,8 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter a character: '0' is NOT a Capital Letter.
+*/

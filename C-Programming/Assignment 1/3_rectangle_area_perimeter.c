@@ -31,3 +31,9 @@ int main() {
   // Return 0 to indicate successful execution
   return 0;
 }
+
+/*
+Output:
+Enter the length of the rectangle: Enter the width of the rectangle: Area of the rectangle: 0.00
+Perimeter of the rectangle: 2.00
+*/

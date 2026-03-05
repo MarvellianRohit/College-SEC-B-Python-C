@@ -17,3 +17,12 @@ else:
     print("You are senior citizen")
 
 
+
+'''
+Output:
+ Enter your age: Traceback (most recent call last):
+  File "/Users/rohitchandra/Documents/college/Python-Programming/print.py", line 1, in <module>
+    x,y = input(" Enter your age: ").split()
+    ^^^
+ValueError: not enough values to unpack (expected 2, got 0)
+'''

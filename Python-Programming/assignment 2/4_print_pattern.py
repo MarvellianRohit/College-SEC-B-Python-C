@@ -6,3 +6,9 @@ print("Method 1 output: 5@10@9")
 # Method 2: Using sep parameter
 print("Method 2 output:", end=" ")
 print(5, 10, 9, sep="@")
+
+'''
+Output:
+Method 1 output: 5@10@9
+Method 2 output: 5@10@9
+'''

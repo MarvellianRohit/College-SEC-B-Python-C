@@ -24,3 +24,8 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter amount in Rupees: 0.00 Rupees = 0 Paise
+*/

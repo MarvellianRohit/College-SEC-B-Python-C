@@ -38,3 +38,10 @@ int main() {
 
   return 0; // Return 0 to indicate successful program execution
 }
+
+/*
+Output:
+Enter 10 distinct numbers:
+Element 1: Element 2: Element 3: Element 4: Element 5: Element 6: Element 7: Element 8: Element 9: Element 10: 
+Enter the number to search: Number 1863789520 not found in the array.
+*/

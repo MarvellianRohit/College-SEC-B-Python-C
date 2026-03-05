@@ -6,3 +6,9 @@ print("Good Morning")
 input("Press Enter to continue...")
 # Once Enter is pressed, print the punch line "How are you" to the console
 print("How are you")
+
+'''
+Output:
+Good Morning
+Press Enter to continue...How are you
+'''

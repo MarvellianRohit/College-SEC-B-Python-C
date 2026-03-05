@@ -10,3 +10,11 @@ feet = int(total_inches // 12)
 remaining_inches = total_inches % 12
 
 print(f"Your height is {feet} feet and {remaining_inches:.2f} inches")
+
+'''
+Output:
+Enter your height in centimeters: Traceback (most recent call last):
+  File "/Users/rohitchandra/Documents/college/Python-Programming/assignment 2/7_height_conversion.py", line 3, in <module>
+    height_cm = float(input("Enter your height in centimeters: "))
+ValueError: could not convert string to float: ''
+'''

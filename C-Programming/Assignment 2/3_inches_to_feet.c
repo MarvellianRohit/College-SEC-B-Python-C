@@ -24,3 +24,8 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter total inches: 0 inches is equal to 0 feet and 0 inches
+*/

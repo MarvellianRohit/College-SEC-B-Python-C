@@ -41,3 +41,7 @@ int main() {
   // Return 0 to indicate successful program termination
   return 0;
 }
+/*
+Output:
+
+Enter the number of data: */

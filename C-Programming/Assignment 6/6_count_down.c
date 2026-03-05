@@ -26,3 +26,9 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter value of N: Numbers from 0 down to 1:
+
+*/

@@ -39,3 +39,9 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter size of array: Enter 0 integers:
+Average of elements: nan
+*/

@@ -99,3 +99,8 @@ void displayList(struct Node *head) {
   }
   printf("NULL\n"); // End marker
 }
+
+/*
+Output:
+Enter the number of nodes to create: Invalid number of nodes.
+*/

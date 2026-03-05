@@ -27,3 +27,8 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter base of the triangle (integer): Enter height of the triangle (integer): Area of triangle (Integer Arithmetic): 0
+*/

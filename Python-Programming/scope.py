@@ -3,3 +3,7 @@ def f():
     print(a)
 f()
 #print(a) #This would raise an error since 'local_var' is not a function
+'''
+Output:
+I Am A SNU Student
+'''

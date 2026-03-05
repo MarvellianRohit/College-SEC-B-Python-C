@@ -4,3 +4,7 @@ A = input("Entr your Name: ")
 print("the name is ", A)
 # A personal note indicating this is the first day of learning Python
 #This is my 1st day of Python
+'''
+Output:
+Entr your Name: the name is  
+'''

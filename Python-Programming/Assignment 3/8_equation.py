@@ -18,3 +18,10 @@ result = (4 * x**4) + (3 * y**3) + (9 * z**2) + (6 * math.pi)
 
 # Print the final calculated result to the console
 print(f"The result is: {result}")
+'''
+Output:
+Enter x: Traceback (most recent call last):
+  File "/Users/rohitchandra/Documents/college/Python-Programming/Assignment 3/8_equation.py", line 5, in <module>
+    x = float(input("Enter x: "))
+ValueError: could not convert string to float: ''
+'''

@@ -55,3 +55,8 @@ int main() {
   // Return 0 to the operating system to indicate successful execution
   return 0;
 }
+
+/*
+Output:
+Enter a three-digit integer: 0 is an Armstrong number.
+*/

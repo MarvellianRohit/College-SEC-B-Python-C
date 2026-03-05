@@ -15,3 +15,11 @@ average = total_temp / 7
 
 # Print the calculated average temperature, formatted to display 2 decimal places
 print(f"The average temperature of the week is: {average:.2f}")
+
+'''
+Output:
+Enter temperature for day 1: Traceback (most recent call last):
+  File "/Users/rohitchandra/Documents/college/Python-Programming/Assignment 3/2_average_temp.py", line 9, in <module>
+    temp = float(input(f"Enter temperature for day {i}: "))
+ValueError: could not convert string to float: ''
+'''

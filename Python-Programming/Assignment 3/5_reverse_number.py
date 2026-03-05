@@ -12,3 +12,8 @@ if len(num) == 3 and num.isdigit():
 else:
     # If either of the conditions fails (not 3 digits or contains letters/symbols), print an error message
     print("Invalid input. Please enter a valid 3-digit number.")
+
+'''
+Output:
+Enter a 3-digit number: Invalid input. Please enter a valid 3-digit number.
+'''

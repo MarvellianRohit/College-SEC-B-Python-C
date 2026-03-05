@@ -15,3 +15,11 @@ print("String (name):", name)
 # Boolean
 is_student = True
 print("Boolean (is_student):", is_student)
+
+'''
+Output:
+Integer (age): 20
+Float (height): 5.9
+String (name): Rohit
+Boolean (is_student): True
+'''

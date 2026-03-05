@@ -33,3 +33,8 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter an integer: Sum of digits = 0
+*/

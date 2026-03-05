@@ -73,3 +73,13 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter Employee Details:
+ID: Name: Salary: 
+--- Employee Details ---
+ID: 0
+Name: 1
+Salary: 0.00
+*/

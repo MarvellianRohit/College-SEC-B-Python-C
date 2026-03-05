@@ -40,3 +40,25 @@ def display():
     print("SNU")
 
 display()
+'''
+Output:
+5
+<class 'int'>
+10.34
+<class 'float'>
+S
+<class 'str'>
+SNU
+<class 'str'>
+[1, 20, 78, 'r', 'School']
+<class 'list'>
+[1, 2, 3, 4, 5]
+<class 'list'>
+I live in Kolkata
+<class 'str'>
+
+35.34
+S SNU
+Hello World
+SNU
+'''

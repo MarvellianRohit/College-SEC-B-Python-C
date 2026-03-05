@@ -117,3 +117,7 @@ void peek() {
            queue[front]); // Print the element at the front index
   }
 }
+
+/*
+Output:
+Execution timed out (possibly waiting for input).*/

@@ -10,3 +10,10 @@ print("New Value:", my_var)
 # Changing the type (Python is dynamically typed)
 my_var = "Now I am a string"
 print("Value after changing type:", my_var)
+
+'''
+Output:
+Initial Value: 10
+New Value: 50
+Value after changing type: Now I am a string
+'''

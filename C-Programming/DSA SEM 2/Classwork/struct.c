@@ -54,3 +54,7 @@ int main() {
   // Return 0 for successful execution
   return 0;
 }
+/*
+Output:
+
+Enter the number of data: */

@@ -34,3 +34,10 @@ int main() {
   // Return 0 to indicate successful execution
   return 0;
 }
+
+/*
+Output:
+Enter the first number: Enter the second number: 
+Before Swapping: num1 = 0, num2 = 1
+After Swapping:  num1 = 1, num2 = 0
+*/

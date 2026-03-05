@@ -7,3 +7,8 @@ if len(ch) == 1:
     print(f"The ASCII value of '{ch}' is {ord(ch)}")
 else:
     print("Please enter exactly one character.")
+
+'''
+Output:
+Enter a character: Please enter exactly one character.
+'''

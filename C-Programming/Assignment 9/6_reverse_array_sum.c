@@ -65,3 +65,13 @@ int main() {
 
   return 0;
 }
+
+/*
+Output:
+Enter array size: Enter 0 integers:
+
+Original Array: 
+Reversed Array: 
+Sum of Even elements: 0
+Sum of Odd elements:  0
+*/

@@ -35,3 +35,9 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter principal amount: Enter annual rate of interest: Enter time in years: Compound Interest: 0.00
+Total Amount: 0.00
+*/

@@ -8,3 +8,8 @@ seconds_in_minute = 60
 total_seconds = days_in_year * hours_in_day * minutes_in_hour * seconds_in_minute
 
 print("Number of seconds in a year (assuming 365 days):", total_seconds)
+
+'''
+Output:
+Number of seconds in a year (assuming 365 days): 31536000
+'''

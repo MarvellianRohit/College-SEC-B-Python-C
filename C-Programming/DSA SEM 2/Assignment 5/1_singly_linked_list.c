@@ -21,8 +21,73 @@ int countNodes();
 void display();
 
 int main() {
-  int choice, val,
-      pos; // Local variables for menu choice, input value, and position
+  int choice, val, pos; // Local variables for menu choice, input value, and position
+
+  // --- Polynomial Representation (3x^5 + 4x^3 + 5) ---
+  
+  // Structure for Array Representation: Stores coefficient and exponent for each term
+  struct Term {
+    int coeff; // Numerical coefficient
+    int exp;   // Exponent of x
+  };
+
+  // 1. Array Form: Initializing an array of 'Term' structures with polynomial data
+  struct Term polyArray[3] = {
+    {3, 5}, // Term 1: 3x^5
+    {4, 3}, // Term 2: 4x^3
+    {5, 0}  // Term 3: 5x^0 (constant 5)
+  };
+
+  // Displaying Polynomial in Array Form
+  printf("\n--- Array Representation of Polynomial ---\n");
+  for (int i = 0; i < 3; i++) {
+    printf("%dx^%d", polyArray[i].coeff, polyArray[i].exp);
+    if (i < 2) printf(" + "); // Add ' + ' between terms, but not after the last one
+  }
+  printf("\n");
+
+  // Structure for Linked List Representation: Stores term data and pointer to next term
+  struct PolyNode {
+    int coeff;             // Numerical coefficient
+    int exp;               // Exponent of x
+    struct PolyNode *next; // Pointer to the next term in the polynomial
+  };
+
+  // 2. Linked List Form: Creating a linked list dynamically
+  struct PolyNode *polyHead = NULL; // Head of the polynomial linked list
+  struct PolyNode *t, *curr;        // Temporary pointers for creation and traversal
+
+  int coeffs[] = {3, 4, 5}; // Coefficients to be added
+  int exps[] = {5, 3, 0};   // Corresponding exponents
+
+  // Loop to create and link nodes for each term in the arrays above
+  for(int i = 0; i < 3; i++) {
+    t = (struct PolyNode*)malloc(sizeof(struct PolyNode)); // Allocate memory for a new term node
+    t->coeff = coeffs[i]; // Set coefficient
+    t->exp = exps[i];     // Set exponent
+    t->next = NULL;       // Initially, next is NULL
+    
+    // If list is empty, make this node the head
+    if(polyHead == NULL) {
+      polyHead = t;
+      curr = t;
+    } else {
+      // Otherwise, link the current last node to this new node and move 'curr' forward
+      curr->next = t;
+      curr = t;
+    }
+  }
+
+  // Displaying Polynomial in Linked List Form (as (coeff, exp) pairs)
+  printf("\n--- Linked List Representation of Polynomial ---\n");
+  curr = polyHead;
+  while(curr != NULL) {
+    printf("(%d, %d)", curr->coeff, curr->exp); // Print current term data
+    if(curr->next != NULL) printf(" -> ");      // Add arrow if there is a next node
+    curr = curr->next;                          // Move to the next node
+  }
+  printf(" -> NULL\n"); // End of the list indicator
+  // ----------------------------------------------------
 
   // Infinite loop for user menu interaction
   while (1) {
@@ -237,3 +302,7 @@ void display() {
   printf("NULL\n"); // Indicate the end of list
   printf("Total number of nodes: %d\n", countNodes()); // Show node count
 }
+
+/*
+Output:
+Execution timed out (possibly waiting for input).*/

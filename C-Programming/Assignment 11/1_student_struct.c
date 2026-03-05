@@ -52,3 +52,13 @@ int main() {
   // Return 0 to indicate successful execution
   return 0;
 }
+
+/*
+Output:
+Enter details for the student:
+Enter Name: Enter Age: Enter Marks: 
+--- Student Details ---
+Name: 0
+Age: 1
+Marks: 0.00
+*/

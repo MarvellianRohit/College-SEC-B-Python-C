@@ -135,3 +135,13 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter size of array: Enter elements of array:
+
+--- Frequency of Each Number ---
+
+Most Frequent Element: -1 (Frequency: 0)
+Least Frequent Element: -1 (Frequency: 1)
+*/

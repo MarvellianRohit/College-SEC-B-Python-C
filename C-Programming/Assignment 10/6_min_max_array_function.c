@@ -53,3 +53,10 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter size of array: Enter 0 integers:
+Smallest element: 0
+Largest element: 0
+*/

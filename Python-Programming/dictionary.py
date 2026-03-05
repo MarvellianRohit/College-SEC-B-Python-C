@@ -12,3 +12,12 @@ print(type(s))
 print(type(li))
 print(type(d))
 print(type(bool))
+'''
+Output:
+<class 'int'>
+<class 'float'>
+<class 'str'>
+<class 'list'>
+<class 'dict'>
+<class 'bool'>
+'''

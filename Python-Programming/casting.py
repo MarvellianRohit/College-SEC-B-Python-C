@@ -10,3 +10,9 @@ print(cnt)
 print(s2)
 
 '''This is the Eample of TypeCasting'''
+'''
+Output:
+10
+5
+25
+'''

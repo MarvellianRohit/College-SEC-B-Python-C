@@ -33,3 +33,9 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter the value of N: Sum of Even numbers up to 0 = 0
+Sum of Odd numbers up to 0 = 0
+*/

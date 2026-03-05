@@ -39,3 +39,8 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter a positive integer: 0 is not a prime number.
+*/

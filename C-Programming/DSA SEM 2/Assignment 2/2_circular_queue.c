@@ -117,3 +117,7 @@ void peek() {
     printf("\nFront element: %d\n", queue[front]); // Print element at front
   }
 }
+
+/*
+Output:
+Execution timed out (possibly waiting for input).*/

@@ -34,3 +34,8 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter an integer: Reversed Number = 0
+*/

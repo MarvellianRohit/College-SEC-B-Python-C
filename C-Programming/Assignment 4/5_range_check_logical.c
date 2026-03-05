@@ -26,3 +26,8 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter an integer: 0 is NOT between 10 and 100.
+*/

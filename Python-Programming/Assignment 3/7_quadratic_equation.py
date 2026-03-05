@@ -24,3 +24,10 @@ else:
     # If the discriminant is less than 0, the roots are complex/imaginary numbers
     # We simply print "Roots are imaginary" as per basic requirements
     print("Roots are imaginary")
+'''
+Output:
+Enter a: Traceback (most recent call last):
+  File "/Users/rohitchandra/Documents/college/Python-Programming/Assignment 3/7_quadratic_equation.py", line 5, in <module>
+    a = float(input("Enter a: "))
+ValueError: could not convert string to float: ''
+'''

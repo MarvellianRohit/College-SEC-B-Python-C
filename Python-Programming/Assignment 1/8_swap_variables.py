@@ -15,3 +15,14 @@ b = temp
 print("\nAfter Swap:")
 print("a =", a)
 print("b =", b)
+
+'''
+Output:
+Before Swap:
+a = 10
+b = 20
+
+After Swap:
+a = 20
+b = 10
+'''

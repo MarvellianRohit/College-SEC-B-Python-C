@@ -135,3 +135,7 @@ int main() {
 
   return 0; // Return 0 as standard practice for successful program completion
 }
+
+/*
+Output:
+Execution timed out (possibly waiting for input).*/

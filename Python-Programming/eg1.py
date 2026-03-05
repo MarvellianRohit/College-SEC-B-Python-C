@@ -14,3 +14,16 @@ print(d)
 print(type(d))
 print(li)
 print(type(li))
+'''
+Output:
+5
+<class 'int'>
+10.34
+<class 'float'>
+S
+<class 'str'>
+SNU
+<class 'str'>
+[1, 20, 78, 'r', 'School']
+<class 'list'>
+'''

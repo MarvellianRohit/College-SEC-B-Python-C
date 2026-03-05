@@ -63,3 +63,9 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter size of array: Enter 0 integers:
+ Invalid Input There is no second largest element.
+*/

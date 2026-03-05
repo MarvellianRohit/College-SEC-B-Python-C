@@ -61,3 +61,10 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter number of elements: Enter 0 integers:
+Sum = 0
+Average = nan
+*/

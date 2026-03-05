@@ -30,3 +30,8 @@ int main() {
 
   return 0;
 }
+
+/*
+Output:
+Are you sure you want to shut down the computer? (y/n): Shutdown cancelled.
+*/

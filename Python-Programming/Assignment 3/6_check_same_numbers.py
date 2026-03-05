@@ -20,3 +20,8 @@ try:
 except ValueError:
     # Print an error message asking the user to enter valid numeric values
     print("Invalid input. Please enter valid numbers.")
+
+'''
+Output:
+Enter the first number: Invalid input. Please enter valid numbers.
+'''

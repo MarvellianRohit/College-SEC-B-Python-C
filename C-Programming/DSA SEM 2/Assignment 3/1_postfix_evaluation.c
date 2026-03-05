@@ -74,3 +74,8 @@ int main() {
   printf("Postfix evaluation result: %d\n", evaluatePostfix(exp));
   return 0;
 }
+
+/*
+Output:
+Enter postfix expression: Postfix evaluation result: 0
+*/

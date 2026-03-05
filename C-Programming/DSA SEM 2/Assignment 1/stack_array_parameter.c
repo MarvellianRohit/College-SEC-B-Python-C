@@ -59,3 +59,11 @@ int main() {
   }
   return 0;
 }
+
+/*
+Output:
+
+1. Push 
+2. Pop 
+3. Display 
+ Enter the input: */

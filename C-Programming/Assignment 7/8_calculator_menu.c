@@ -68,3 +68,7 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Execution timed out (possibly waiting for input).*/

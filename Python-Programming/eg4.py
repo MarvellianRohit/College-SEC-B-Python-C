@@ -37,3 +37,18 @@ print(f"{val} for {val} is a portal for {val}")
 name = "OM"
 age = 21
 print(f"{name} is {age} years old.")
+'''
+Output:
+The amount is 1000
+The amount is: $150.75
+apple-orange-cherry
+apple-banana-cherry
+S N U
+S-N
+U
+potrtal and Geeks
+SoumikHe asked me, "How are you?" and Tanushree replied, "I am fine."
+SoumikHe asked me, "How are you?" and Tanushree replied, "I am fine."
+Geeks for Geeks is a portal for Geeks
+OM is 21 years old.
+'''

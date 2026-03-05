@@ -77,3 +77,12 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter initial number of elements (n): Enter 0 integers:
+Enter number of new elements to add (m): Enter 1 more integers:
+
+All elements after resizing:
+0 
+*/

@@ -29,3 +29,8 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter a number: 0 lies OUTSIDE the range 50 to 100.
+*/

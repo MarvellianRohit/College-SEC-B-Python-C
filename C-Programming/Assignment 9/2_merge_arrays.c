@@ -53,3 +53,11 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter size of first array: Enter elements of first array:
+Enter size of second array: Enter elements of second array:
+Merged Array:
+2 
+*/

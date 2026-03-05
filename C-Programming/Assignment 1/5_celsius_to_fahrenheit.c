@@ -20,3 +20,8 @@ int main() {
   // Return 0 to indicate successful execution
   return 0;
 }
+
+/*
+Output:
+Enter temperature in Celsius: 0.00 Celsius is equal to 32.00 Fahrenheit
+*/

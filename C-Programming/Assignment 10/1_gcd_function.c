@@ -30,3 +30,8 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter two positive integers: GCD of 0 and 1 is 1
+*/

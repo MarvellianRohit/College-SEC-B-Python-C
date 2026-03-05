@@ -4,3 +4,9 @@ if 5 > 2:
     print ("5 is greater than 2")
 # Print this message to the console regardless of the condition above
 print("5 is greater than 2")
+
+'''
+Output:
+5 is greater than 2
+5 is greater than 2
+'''

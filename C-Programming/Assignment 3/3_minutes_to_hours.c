@@ -29,3 +29,8 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter total minutes: 0 minutes = 0 Hours and 0 Minutes
+*/

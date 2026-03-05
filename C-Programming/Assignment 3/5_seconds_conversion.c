@@ -35,3 +35,8 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter total seconds: 0 seconds = 0 Hours, 0 Minutes, and 0 Seconds
+*/

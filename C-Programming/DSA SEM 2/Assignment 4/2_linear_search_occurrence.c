@@ -42,3 +42,11 @@ int main() {
 
   return 0; // Successful program termination
 }
+
+/*
+Output:
+Enter 10 numbers:
+Element 1: Element 2: Element 3: Element 4: Element 5: Element 6: Element 7: Element 8: Element 9: Element 10: 
+Enter the number to search: Searching for 1829579728...
+Number 1829579728 not found in the array.
+*/

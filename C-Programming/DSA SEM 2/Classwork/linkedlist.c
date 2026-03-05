@@ -85,19 +85,77 @@ void insert_at_end() {
   }
 }
 
+// Function to delete the last node of the list
+void delete_at_end() {
+  struct dlinklist *temp, *prev;
+
+  if (start == NULL) {
+    printf("\n Empty List. Nothing to delete.");
+    return;
+  }
+
+  temp = start;
+  if (temp->next == NULL) {
+    // Only one node in the list
+    free(temp);
+    start = NULL;
+    printf("\n Last node deleted. List is now empty.");
+    return;
+  }
+
+  // Traverse to the end while keeping track of the previous node
+  while (temp->next != NULL) {
+    prev = temp;
+    temp = temp->next;
+  }
+
+  prev->next = NULL; // Disconnect the last node
+  free(temp);        // Deallocate memory
+  printf("\n Last node deleted.");
+}
+
 int main() {
   int ch, n;
 
-  // Check if list is not already created
-  if (start == NULL) {
-    printf("\n Number of nodes you want to create: ");
-    scanf("%d", &n);
-    createlist(n); // Create initial list
-    printf("\n List created..\n");
-    insert_at_end(); // Insert an additional node at the end
-  } else {
-    printf("\n List is already created..");
+  while (1) {
+    printf("\n\n --- Linked List Menu ---");
+    printf("\n 1. Create List");
+    printf("\n 2. Traverse List");
+    printf("\n 3. Insert at End");
+    printf("\n 4. Delete at End");
+    printf("\n 5. Exit");
+    printf("\n Enter your choice: ");
+    scanf("%d", &ch);
+
+    switch (ch) {
+    case 1:
+      if (start == NULL) {
+        printf("\n Number of nodes you want to create: ");
+        scanf("%d", &n);
+        createlist(n);
+        printf("\n List created..");
+      } else {
+        printf("\n List is already created..");
+      }
+      break;
+    case 2:
+      traverse();
+      break;
+    case 3:
+      insert_at_end();
+      break;
+    case 4:
+      delete_at_end();
+      break;
+    case 5:
+      printf("\n Exiting...");
+      exit(0);
+    default:
+      printf("\n Invalid choice! Try again.");
+    }
   }
-  traverse(); // Display the list
   return 0;
 }
+/*
+Output:
+Execution timed out (possibly waiting for input).*/

@@ -27,3 +27,8 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter the value of N: Sum of first 0 natural numbers is: 0
+*/

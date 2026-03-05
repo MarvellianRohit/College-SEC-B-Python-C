@@ -40,3 +40,10 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter the number of elements: Enter 0 integers:
+Total Even numbers: 0
+Total Odd numbers: 0
+*/

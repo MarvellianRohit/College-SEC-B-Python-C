@@ -71,3 +71,13 @@ int main() {
 
   return 0;
 }
+
+/*
+Output:
+Enter number of elements: Enter 0 integers:
+
+Element Frequency:
+
+Most Frequent Element: -104923040 (Frequency: -1)
+Least Frequent Element: 1 (Frequency: 1)
+*/

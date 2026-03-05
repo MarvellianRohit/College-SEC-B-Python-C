@@ -52,3 +52,10 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter the number of elements: Enter 0 integers:
+Array with unique elements:
+
+*/

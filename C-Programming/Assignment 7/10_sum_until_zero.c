@@ -27,3 +27,8 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter a number (enter 0 to stop): Total Sum = 0.00
+*/

@@ -10,3 +10,11 @@ bmi = weight / (height ** 2)
 
 # Print the calculated BMI to the console, formatted to display exactly 2 decimal places
 print(f"The Body Mass Index (BMI) is: {bmi:.2f}")
+
+'''
+Output:
+Enter weight in kilograms (kg): Traceback (most recent call last):
+  File "/Users/rohitchandra/Documents/college/Python-Programming/Assignment 3/3_bmi_calculator.py", line 4, in <module>
+    weight = float(input("Enter weight in kilograms (kg): "))
+ValueError: could not convert string to float: ''
+'''

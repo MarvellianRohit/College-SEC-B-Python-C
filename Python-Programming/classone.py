@@ -30,3 +30,14 @@ print(Mod)
 print(Root)
 # Print the value of Sqr to the console
 print(Sqr)
+
+'''
+Output:
+30
+10
+200
+2.0
+0
+2
+10240000000000
+'''

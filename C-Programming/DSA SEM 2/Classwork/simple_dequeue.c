@@ -82,3 +82,24 @@ int main() {
 
   return 0;
 }
+
+/*
+Output:
+--- Preparing the Queue ---
+Inserted 10
+Inserted 20
+Inserted 30
+Current Queue: [10] [20] [30] 
+
+--- Dequeue Demonstration ---
+
+--- DELETING... ---
+Removing 10 from the front of the queue.
+The front moved to the next position.
+Current Queue: [20] [30] 
+
+--- DELETING... ---
+Removing 20 from the front of the queue.
+The front moved to the next position.
+Current Queue: [30] 
+*/

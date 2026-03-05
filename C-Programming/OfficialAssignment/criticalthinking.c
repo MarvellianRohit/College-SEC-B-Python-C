@@ -135,3 +135,40 @@ int main() {
   printf("\n========================================\n");
   return 0; // Tell the OS the program finished successfully
 }
+/*
+Output:
+========================================
+      ROHIT'S LIBRARY SYSTEM (BCA)     
+========================================
+
+Welcome, Rohit!
+Please enter your roll number: 
+>>> Your Details:
+B (Books to return): 5
+W (Waiting students): 4
+
+--- Step 1: Adding Books ---
+Book 5001 added to stack.
+Book 5002 added to stack.
+Book 5003 added to stack.
+Book 5004 added to stack.
+Book 5005 added to stack.
+
+--- Step 2: Adding Students ---
+Student 101 added to queue.
+Student 102 added to queue.
+Student 103 added to queue.
+Student 104 added to queue.
+
+--- Step 3: Issuing Process ---
+Book 5005 given to Student 101
+Book 5004 given to Student 102
+Book 5003 given to Student 103
+Book 5002 given to Student 104
+
+--- Step 4: Final Status ---
+Books remaining in stack.
+All students got their books!
+
+========================================
+*/

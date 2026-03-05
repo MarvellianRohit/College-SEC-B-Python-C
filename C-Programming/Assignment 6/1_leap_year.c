@@ -29,3 +29,8 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter a year: 0 is a Leap Year.
+*/

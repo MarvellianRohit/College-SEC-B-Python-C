@@ -36,3 +36,8 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Enter an integer: Number of digits: 1
+*/

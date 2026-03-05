@@ -66,3 +66,8 @@ int main() {
   }
   return 0;
 }
+
+/*
+Output:
+Enter an expression: Balanced
+*/

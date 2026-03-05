@@ -42,3 +42,14 @@ int main() {
   // Return 0 for success
   return 0;
 }
+
+/*
+Output:
+Initial values: a = 10, b = 20
+
+Using Equality Operator (a == b):
+Result: a is NOT equal to b (False)
+
+Using Assignment Operator (a = b):
+Result: a has been assigned the value of b. New a = 20
+*/

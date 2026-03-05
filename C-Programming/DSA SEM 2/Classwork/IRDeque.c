@@ -142,3 +142,7 @@ int main() {
   }
   return 0; // Return success status
 }
+
+/*
+Output:
+Execution timed out (possibly waiting for input).*/

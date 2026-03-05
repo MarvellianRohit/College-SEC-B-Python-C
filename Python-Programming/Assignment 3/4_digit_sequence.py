@@ -22,3 +22,8 @@ try:
 except ValueError:
     # Print a user-friendly error message indicating that a valid number should be entered
     print("Invalid input. Please enter a valid number.")
+
+'''
+Output:
+Enter a single digit (1-7): Invalid input. Please enter a valid number.
+'''

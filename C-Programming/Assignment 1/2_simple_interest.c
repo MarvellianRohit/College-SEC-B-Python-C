@@ -30,3 +30,8 @@ int main() {
   // Return 0 to indicate successful execution
   return 0;
 }
+
+/*
+Output:
+Enter the principal amount: Enter the rate of interest: Enter the time in years: Simple Interest: -0.00
+*/

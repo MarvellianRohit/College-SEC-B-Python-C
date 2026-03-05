@@ -87,3 +87,7 @@ void main() {
     }
   }
 }
+
+/*
+Output:
+Execution timed out (possibly waiting for input).*/

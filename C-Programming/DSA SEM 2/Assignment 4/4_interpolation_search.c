@@ -79,3 +79,13 @@ int main() {
 
   return 0; // Program end
 }
+
+/*
+Output:
+Enter 10 numbers:
+Element 1: Element 2: Element 3: Element 4: Element 5: Element 6: Element 7: Element 8: Element 9: Element 10: 
+Sorted array (required for interpolation search):
+-104919616 -102116792 -102102688 -16 -1 0 1 1 1 1 
+
+Enter the number to search: Number 1872899024 not found in the array.
+*/
