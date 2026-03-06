@@ -1,27 +1,46 @@
 a = 5
 b = 10.34
+
 c = 'S'
+
 d = "SNU"
+
 li = [1, 20, 78, 'r', "School"]
+
 li1 = [1,2,3,4,5]
 
 
 print(a)
+
 print(type(a))
+
 print(b)
+
 print(type(b))
+
 print(c)
+
 print(type(c))
+
 print(d)
+
 print(type(d))
+
 print(li)
+
 print(type(li))
+
 print(li1)
+
 print(type(li1))
 
 #Changing the data type of this list below
+
+
 li = "I live in Kolkata" #You can use single quotes too
+
 print(li)
+
 print(type(li))
 
 
@@ -32,33 +51,57 @@ print()
 
 
 a = 25
+
 print(a + b)
+
 print(c + " " + d)
 
 def display():
+
     print("Hello World")
+
     print("SNU")
 
 display()
+
 '''
+
 Output:
+
 5
+
 <class 'int'>
+
 10.34
+
 <class 'float'>
+
 S
+
 <class 'str'>
+
 SNU
+
 <class 'str'>
+
 [1, 20, 78, 'r', 'School']
+
 <class 'list'>
+
 [1, 2, 3, 4, 5]
+
 <class 'list'>
+
 I live in Kolkata
+
 <class 'str'>
 
 35.34
+
 S SNU
+
 Hello World
+
 SNU
+
 '''
