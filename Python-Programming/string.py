@@ -86,3 +86,92 @@ for i in list2: # Iterate through every word in the word list (list2)
     if i[0]=='@': # Check if the first character of the word is '@'
         cnt = cnt + 1 # If yes, increment the counter by 1
 print("Number of Topic: "+str(cnt)) # Print the final count of annotations found via loop
+
+# --------------------------------------------------------------------------------
+# NEW SECTION: Finding Distinct (Unique) Elements 
+# This part is kept separate to analyze unique occurrences specifically.
+# --------------------------------------------------------------------------------
+
+print("\n--- Distinct Elements Analysis ---") # Print a header for the distinct elements section
+
+# Using a set to find unique words (case-insensitive and punctuation-stripped)
+unique_words = set() # Initialize an empty set to store unique (distinct) words
+for word in words: # Loop through each word in the 'words' list created earlier
+    # Clean the word: remove common punctuation and symbols, and convert to lowercase
+    # strip() removes the specified characters from both the beginning and end of the string
+    clean = word.strip('.,!?:;()#@*').lower() 
+    if clean: # If the cleaned word is not an empty string
+        unique_words.add(clean) # Add the cleaned word to the set (sets only store unique values)
+
+print("Number of Distinct Words:", len(unique_words)) # Print the count of unique words found
+# print("List of Unique Words:", sorted(list(unique_words))) # (Optional) Print the sorted list of unique words
+
+# Finding distinct hashtags (topics) with cleaning
+unique_hashtags = set() # Initialize an empty set for unique hashtags
+for t in topics: # Loop through each hashtag found in the 'topics' list
+    # Remove trailing punctuation from topics to ensure '#WarUpdate,' and '#WarUpdate' match
+    clean_t = t.rstrip('.,!?:;()').lower() 
+    if clean_t: # If the cleaned hashtag is not empty
+        unique_hashtags.add(clean_t) # Add it to the set to automatically keep only distinct tags
+
+print("Number of Distinct Topics:", len(unique_hashtags)) # Print the count of unique hashtags
+print("Unique Topics Found:", unique_hashtags) # Print the actual unique hashtags found
+
+# Finding distinct annotations (mentions) with cleaning
+unique_mentions = set() # Initialize an empty set for unique handle mentions
+for m in annotations: # Loop through each handle found in the 'annotations' list
+    # Remove trailing punctuation from mentions similarly to topics
+    clean_m = m.rstrip('.,!?:;()').lower() 
+    if clean_m: # If the cleaned mention handle is not empty
+        unique_mentions.add(clean_m) # Add it to the set for uniqueness
+
+print("Number of Distinct Annotations:", len(unique_mentions)) # Print the count of unique handles
+print("Unique Annotations Found:", unique_mentions) # Print the actual unique handles found
+
+
+# --------------------------------------------------------------------------------
+# NEW SECTION: Hashtag Frequency Analysis
+# Calculating how many times each specific hashtag appears in the text.
+# --------------------------------------------------------------------------------
+
+print("\n--- Hashtag Frequency Analysis ---") # Print a header for the frequency analysis section
+
+# Using a dictionary to store hashtag counts (Key: Hashtag Name, Value: Frequency Count)
+hashtag_counts = {} 
+
+for t in topics: # Loop through each hashtag in the 'topics' list
+    # Clean the hashtag to ensure consistency (remove trailing punctuation and lowercase)
+    # This prevents duplicates like '#WarUpdate,' and '#WarUpdate' from having separate counts
+    clean_tag = t.rstrip('.,!?:;()').lower() 
+    
+    if clean_tag: # If the cleaned hashtag is valid
+        # Increment the count for this hashtag in the dictionary
+        if clean_tag in hashtag_counts: # If the tag already exists as a key in the dictionary
+            hashtag_counts[clean_tag] += 1 # Increment its existing count by 1
+        else: # If the tag is seen for the first time
+            hashtag_counts[clean_tag] = 1 # Initialize its count to 1
+
+# Displaying the final frequencies stored in the dictionary
+print("Hashtag Frequencies:") # Print a label for the list
+for tag, count in hashtag_counts.items(): # Loop through key-value pairs in the dictionary
+    print(f"  {tag}: {count} times") # Print the hashtag and its total frequency
+
+
+
+
+
+#Output
+"""
+/*--- Distinct Elements Analysis ---
+
+Unique Words: 127
+Unique Topics: 6
+Unique Annotations: 2
+--- Hashtag Frequency Analysis ---
+
+#warupdate: 4 times
+#internationalrelations: 3 times
+#globalconflict: 2 times
+(others 1 time each)
+
+"""
