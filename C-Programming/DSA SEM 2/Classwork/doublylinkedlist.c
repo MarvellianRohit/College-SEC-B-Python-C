@@ -61,6 +61,44 @@ void insertAtEnd() {
   printf("Node inserted at the end.\n");          // confirm insertion to user
 }
 
+// Insert a new node at an intermediate (middle) position in the doubly linked list
+void insertAtIntermediate() {
+  struct dlinklist *newnode, *temp;          // newnode: node to insert; temp: traversal pointer
+  int pos, i;                               // pos: target position; i: loop counter
+
+  printf("\nInfo for insertion at intermediate position: ");
+  newnode = getnode();                       // create a new node with user input
+
+  printf("Enter position to insert (1-based): ");
+  scanf("%d", &pos);                         // read the desired position from the user
+
+  if (pos <= 1 || start == NULL) {           // if position is 1 or list is empty, insert at beginning
+    newnode->right = start;                  // new node points forward to old first node
+    if (start != NULL)
+      start->left = newnode;                 // old first node points back to new node
+    start = newnode;                         // update start to new node
+    printf("Node inserted at position 1 (beginning).\n");
+    return;
+  }
+
+  // Traverse to the (pos-1)th node
+  temp = start;                              // begin from the first node
+  for (i = 1; i < pos - 1 && temp->right != NULL; i++) {
+    temp = temp->right;                      // move to the next node
+  }
+
+  // Now temp points to the node just before the target position
+  newnode->right = temp->right;              // new node's right points to the node currently at pos
+  newnode->left  = temp;                     // new node's left points back to the (pos-1)th node
+
+  if (temp->right != NULL) {                 // if there is a node after the insertion point
+    temp->right->left = newnode;             // that node's left pointer now points to new node
+  }
+
+  temp->right = newnode;                     // (pos-1)th node's right pointer now points to new node
+  printf("Node inserted at position %d.\n", pos); // confirm insertion to user
+}
+
 // Function to display all nodes in the list from left to right
 void traverse() {
   struct dlinklist *temp;                          // declare a temp pointer for traversal
@@ -109,11 +147,17 @@ int main() {
   printf("\nList after insertion at beginning:\n"); // heading for list display
   traverse();                                       // display the updated list
 
-  printf("\nInserting a node at the end:\n");       // inform user about next operation
-  insertAtEnd();                                    // insert a new node at the end
+  printf("\nInserting a node at the end:\n");              // inform user about next operation
+  insertAtEnd();                                         // insert a new node at the end
 
-  printf("\nList after insertion at end:\n");       // heading for list display
-  traverse();                                       // display the final list
+  printf("\nList after insertion at end:\n");             // heading for list display
+  traverse();                                            // display the updated list
 
-  return 0;                                         // indicate successful program termination
+  printf("\nInserting a node at an intermediate position:\n"); // inform user about next operation
+  insertAtIntermediate();                                // insert a new node at a user-specified position
+
+  printf("\nList after insertion at intermediate position:\n"); // heading for list display
+  traverse();                                            // display the final list
+
+  return 0;                                              // indicate successful program termination
 }
