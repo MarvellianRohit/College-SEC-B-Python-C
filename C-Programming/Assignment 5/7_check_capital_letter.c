@@ -41,5 +41,5 @@ int main() {
 
 /*
 Output:
-Enter a character: '0' is NOT a Capital Letter.
+Enter a character: 'G' is a Capital Letter.
 */

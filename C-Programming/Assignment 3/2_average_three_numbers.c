@@ -42,5 +42,5 @@ int main() {
 
 /*
 Output:
-Enter three integers: Average = -34038932.00
+Enter three integers: Average = 20.00
 */

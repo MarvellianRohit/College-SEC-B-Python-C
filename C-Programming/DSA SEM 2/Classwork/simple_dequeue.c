@@ -152,5 +152,5 @@ Current Queue: [20] [30]
 --- DELETING... ---
 Removing 20 from the front of the queue.
 The front moved to the next position.
-Current Queue: [30] 
+Current Queue: [30]
 */

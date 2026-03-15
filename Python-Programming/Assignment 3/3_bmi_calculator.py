@@ -25,12 +25,8 @@ print(f"The Body Mass Index (BMI) is: {bmi:.2f}")
 
 Output:
 
-Enter weight in kilograms (kg): Traceback (most recent call last):
-
-  File "/Users/rohitchandra/Documents/college/Python-Programming/Assignment 3/3_bmi_calculator.py", line 4, in <module>
-
-    weight = float(input("Enter weight in kilograms (kg): "))
-
-ValueError: could not convert string to float: ''
+Enter weight in kilograms (kg): 70
+Enter height in meters (m): 1.75
+The Body Mass Index (BMI) is: 22.86
 
 '''

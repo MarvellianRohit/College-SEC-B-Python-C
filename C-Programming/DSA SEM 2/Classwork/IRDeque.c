@@ -236,3 +236,47 @@ int main() {
 /*
 Output:
 Execution timed out (possibly waiting for input).*/
+
+/*
+Output:
+
+--- Insertion Restricted Deque Menu ---
+1. Insert Item at Rear (Only Entry Point)
+2. Delete Item from Front
+3. Delete Item from Rear
+4. Display All Items
+5. Exit Program
+Enter your choice (1-5): Enter the integer value to add: Inserted 10 at the Rear.
+
+--- Insertion Restricted Deque Menu ---
+1. Insert Item at Rear (Only Entry Point)
+2. Delete Item from Front
+3. Delete Item from Rear
+4. Display All Items
+5. Exit Program
+Enter your choice (1-5): Deleted 10 from the Front.
+
+--- Insertion Restricted Deque Menu ---
+1. Insert Item at Rear (Only Entry Point)
+2. Delete Item from Front
+3. Delete Item from Rear
+4. Display All Items
+5. Exit Program
+Enter your choice (1-5): Invalid selection! Please choose 1-5.
+
+--- Insertion Restricted Deque Menu ---
+1. Insert Item at Rear (Only Entry Point)
+2. Delete Item from Front
+3. Delete Item from Rear
+4. Display All Items
+5. Exit Program
+Enter your choice (1-5): Deque is empty.
+
+--- Insertion Restricted Deque Menu ---
+1. Insert Item at Rear (Only Entry Point)
+2. Delete Item from Front
+3. Delete Item from Rear
+4. Display All Items
+5. Exit Program
+Enter your choice (1-5): Exiting... Goodbye!
+*/

@@ -175,6 +175,9 @@ Default
 
 Default
 
-Enter the full name: Default
+Enter the full name: Rohit Chandra
+Rohit
+Chandra
+Default
 
 '''

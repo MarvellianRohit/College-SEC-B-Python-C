@@ -17,6 +17,7 @@ else:
 
 Output:
 
-Enter a character: Please enter exactly one character.
+Enter a character: A
+The ASCII value of 'A' is 65
 
 '''

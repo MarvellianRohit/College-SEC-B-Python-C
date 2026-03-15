@@ -223,3 +223,25 @@ int main() {
 /*
 Output:
 Execution timed out (possibly waiting for input).*/
+
+/*
+Output:
+Enter number of elements: Enter elements:
+
+--- Array Operations ---
+1. Reverse Array
+2. Remove Duplicates
+3. Sum of Even and Odd
+4. Rotate Array
+5. Exit
+Enter choice: 
+Reversed Array: 5 4 3 2 1 
+
+--- Array Operations ---
+1. Reverse Array
+2. Remove Duplicates
+3. Sum of Even and Odd
+4. Rotate Array
+5. Exit
+Enter choice: Exiting...
+*/

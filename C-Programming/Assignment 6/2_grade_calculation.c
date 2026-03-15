@@ -35,5 +35,5 @@ int main() {
 
 /*
 Output:
-Enter marks: Fail
+Enter marks: Grade B
 */

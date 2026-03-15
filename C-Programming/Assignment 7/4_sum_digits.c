@@ -36,5 +36,5 @@ int main() {
 
 /*
 Output:
-Enter an integer: Sum of digits = 0
+Enter an integer: Sum of digits = 10
 */

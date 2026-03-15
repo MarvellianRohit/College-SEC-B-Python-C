@@ -508,3 +508,102 @@ void display() {
   printf("Total number of nodes: %d\n", countNodes()); // Show node count
 
 }
+
+/*
+Output:
+
+--- Array Representation of Polynomial ---
+3x^5 + 4x^3 + 5x^0
+
+--- Linked List Representation of Polynomial ---
+(3, 5) -> (4, 3) -> (5, 0) -> NULL
+
+--- Singly Linked List Operations ---
+1. Insert at Beginning
+2. Insert at End
+3. Insert Position-wise
+4. Display & Count Nodes
+5. Delete at Beginning
+6. Delete at End
+7. Delete Position-wise
+8. Exit
+Enter your choice: Enter value: Inserted 10 at the beginning.
+
+--- Singly Linked List Operations ---
+1. Insert at Beginning
+2. Insert at End
+3. Insert Position-wise
+4. Display & Count Nodes
+5. Delete at Beginning
+6. Delete at End
+7. Delete Position-wise
+8. Exit
+Enter your choice: Enter value: Inserted 20 at the end.
+
+--- Singly Linked List Operations ---
+1. Insert at Beginning
+2. Insert at End
+3. Insert Position-wise
+4. Display & Count Nodes
+5. Delete at Beginning
+6. Delete at End
+7. Delete Position-wise
+8. Exit
+Enter your choice: Enter value: Enter position: Inserted 30 at the beginning.
+
+--- Singly Linked List Operations ---
+1. Insert at Beginning
+2. Insert at End
+3. Insert Position-wise
+4. Display & Count Nodes
+5. Delete at Beginning
+6. Delete at End
+7. Delete Position-wise
+8. Exit
+Enter your choice: List Content: 30 -> 10 -> 20 -> NULL
+Total number of nodes: 3
+
+--- Singly Linked List Operations ---
+1. Insert at Beginning
+2. Insert at End
+3. Insert Position-wise
+4. Display & Count Nodes
+5. Delete at Beginning
+6. Delete at End
+7. Delete Position-wise
+8. Exit
+Enter your choice: Deleted node from the beginning.
+
+--- Singly Linked List Operations ---
+1. Insert at Beginning
+2. Insert at End
+3. Insert Position-wise
+4. Display & Count Nodes
+5. Delete at Beginning
+6. Delete at End
+7. Delete Position-wise
+8. Exit
+Enter your choice: Deleted node from the end.
+
+--- Singly Linked List Operations ---
+1. Insert at Beginning
+2. Insert at End
+3. Insert Position-wise
+4. Display & Count Nodes
+5. Delete at Beginning
+6. Delete at End
+7. Delete Position-wise
+8. Exit
+Enter your choice: Enter position: Deleted node from the beginning.
+
+--- Singly Linked List Operations ---
+1. Insert at Beginning
+2. Insert at End
+3. Insert Position-wise
+4. Display & Count Nodes
+5. Delete at Beginning
+6. Delete at End
+7. Delete Position-wise
+8. Exit
+Enter your choice: Exiting...
+*/

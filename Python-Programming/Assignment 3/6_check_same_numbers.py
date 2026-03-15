@@ -58,6 +58,16 @@ except ValueError:
 
 Output:
 
-Enter the first number: Invalid input. Please enter valid numbers.
+Sample 1 (All same):
+Enter the first number: 5
+Enter the second number: 5
+Enter the third number: 5
+All three numbers are the same.
+
+Sample 2 (Not same):
+Enter the first number: 1
+Enter the second number: 2
+Enter the third number: 3
+The numbers are not all the same.
 
 '''

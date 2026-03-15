@@ -29,6 +29,6 @@ int main() {
 
 /*
 Output:
-Enter value of N: Numbers from 0 down to 1:
-
+Enter value of N: Numbers from 5 down to 1:
+5 4 3 2 1
 */

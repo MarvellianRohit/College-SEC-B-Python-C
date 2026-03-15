@@ -89,7 +89,7 @@ Output:
 Enter details for the student:
 Enter Name: Enter Age: Enter Marks: 
 --- Student Details ---
-Name: 0
-Age: 1
+Name: 
+Age: -38989112
 Marks: 0.00
 */

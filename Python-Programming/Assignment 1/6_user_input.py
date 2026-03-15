@@ -18,14 +18,16 @@ print("City:", city)
 
 Output:
 
-Enter your Name: Enter your Age: Enter your City: 
+Enter your Name: Alice
+Enter your Age: 25
+Enter your City: Mumbai
 
 --- User Details ---
 
-Name: 
+Name: Alice
 
-Age: 0
+Age: 25
 
-City: 1
+City: Mumbai
 
 '''

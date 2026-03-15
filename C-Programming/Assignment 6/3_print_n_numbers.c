@@ -32,6 +32,6 @@ int main() {
 
 /*
 Output:
-Enter the value of N: First 0 natural numbers are:
-
+Enter the value of N: First 5 natural numbers are:
+1 2 3 4 5
 */

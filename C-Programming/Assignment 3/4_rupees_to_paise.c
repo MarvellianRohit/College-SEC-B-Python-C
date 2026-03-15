@@ -38,5 +38,5 @@ int main() {
 
 /*
 Output:
-Enter amount in Rupees: 0.00 Rupees = 0 Paise
+Enter amount in Rupees: 25.00 Rupees = 2500 Paise
 */

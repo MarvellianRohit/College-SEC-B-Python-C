@@ -158,8 +158,8 @@ Enter temperatures for 30 days:
 Day 1: Day 2: Day 3: Day 4: Day 5: Day 6: Day 7: Day 8: Day 9: Day 10: Day 11: Day 12: Day 13: Day 14: Day 15: Day 16: Day 17: Day 18: Day 19: Day 20: Day 21: Day 22: Day 23: Day 24: Day 25: Day 26: Day 27: Day 28: Day 29: Day 30: 
 Average Temperature: nan°C
 
-Hottest Day: Day 19 (157669486686336176336404480.00°C)
-Coldest Day: Day 9 (-1038634307489797021363505810886361088.00°C)
+Hottest Day: Day 19 (456759092139359259181711360.00°C)
+Coldest Day: Day 9 (-185482473566117696813634221432606031872.00°C)
 
 Days with temperature above average: 0
 */

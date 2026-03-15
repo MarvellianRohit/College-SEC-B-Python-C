@@ -37,3 +37,12 @@ int main() {
 /*
 Output:
 Enter the number of rows: */
+
+/*
+Output:
+Enter the number of rows: A 
+A B 
+A B C 
+A B C D 
+A B C D E
+*/

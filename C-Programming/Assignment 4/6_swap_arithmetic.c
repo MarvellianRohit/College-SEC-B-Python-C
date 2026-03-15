@@ -54,6 +54,6 @@ int main() {
 /*
 Output:
 Enter value for a: Enter value for b: 
-Before Swapping: a = 0, b = 1
-After Swapping:  a = 1, b = 0
+Before Swapping: a = 10, b = 20
+After Swapping:  a = 20, b = 10
 */

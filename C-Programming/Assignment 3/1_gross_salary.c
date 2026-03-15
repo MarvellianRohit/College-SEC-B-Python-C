@@ -83,5 +83,5 @@ int main() {
 
 /*
 Output:
-Enter basic salary: Gross Salary = 0.00
+Enter basic salary: Gross Salary = 67500.00
 */

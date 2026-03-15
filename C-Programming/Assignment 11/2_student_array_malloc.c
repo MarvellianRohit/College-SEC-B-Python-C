@@ -146,5 +146,19 @@ int main() {
 /*
 Output:
 Enter the number of students: 
+Enter details for Student 1:
+Name: Age: Marks: 
+Enter details for Student 2:
+Name: Age: Marks: 
 --- All Students Details ---
+
+Student 1:
+Name: Alice
+Age: 85
+Marks: 0.50
+
+Student 2:
+Name: Bob
+Age: 90
+Marks: 0.00
 */

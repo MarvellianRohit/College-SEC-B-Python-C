@@ -77,5 +77,5 @@ int main() {
 
 /*
 Output:
-Enter postfix expression: Postfix evaluation result: 0
+Enter postfix expression: Postfix evaluation result: 3
 */

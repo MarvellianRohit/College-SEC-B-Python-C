@@ -57,5 +57,5 @@ int main() {
 
 /*
 Output:
-Enter first integer: Enter second integer: 1 is larger.
+Enter first integer: Enter second integer: 15 is larger.
 */

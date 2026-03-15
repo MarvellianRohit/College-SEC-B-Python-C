@@ -65,12 +65,9 @@ else:
 
 Output:
 
-Enter a: Traceback (most recent call last):
-
-  File "/Users/rohitchandra/Documents/college/Python-Programming/Assignment 3/7_quadratic_equation.py", line 5, in <module>
-
-    a = float(input("Enter a: "))
-
-ValueError: could not convert string to float: ''
+Enter a: 1
+Enter b: -5
+Enter c: 6
+Roots are: 3.0 and 2.0
 
 '''

@@ -32,3 +32,12 @@ int main() {
 /*
 Output:
 Enter the size of the square: */
+
+/*
+Output:
+Enter the size of the square: * * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * *
+*/

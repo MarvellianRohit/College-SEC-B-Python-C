@@ -68,5 +68,5 @@ int main() {
 
 /*
 Output:
-Enter a number: 0 is not a prime number.
+Enter a number: 17 is a prime number.
 */

@@ -50,5 +50,5 @@ int main() {
 
 /*
 Output:
-Enter 5 integers for a, b, c, d, e: Result of (0 + 1) * -102116792 / 1 % -104919616 is: -102116792
+Enter 5 integers for a, b, c, d, e: Result of (3 + 4) * 5 / 6 % 7 is: 5
 */

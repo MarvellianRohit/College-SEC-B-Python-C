@@ -50,5 +50,5 @@ int main() {
 
 /*
 Output:
-Enter a number: The number is zero.
+Enter a number: 5 is positive.
 */

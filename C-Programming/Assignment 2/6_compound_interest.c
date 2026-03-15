@@ -56,6 +56,6 @@ int main() {
 
 /*
 Output:
-Enter principal amount: Enter annual rate of interest: Enter time in years: Compound Interest: 0.00
-Total Amount: 0.00
+Enter principal amount: Enter annual rate of interest: Enter time in years: Compound Interest: 102.50
+Total Amount: 1102.50
 */

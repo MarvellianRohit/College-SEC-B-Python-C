@@ -65,3 +65,17 @@ int main() {
   return 0;
 
 }
+
+/*
+Output:
+
+Enter the employee code: 
+Enter the employee name: 
+Enter the employee code: 
+Enter the employee name: 
+Enter the employee code: 
+Enter the employee name: 
+Code: 101 Name: Rohan
+Code: 102 Name: Soham
+Code: 103 Name: Priya
+*/

@@ -42,15 +42,15 @@ int main() {
 
 /*
 Output:
-Enter a number to print its table: Multiplication Table of 0:
-0 * 1 = 0
-0 * 2 = 0
-0 * 3 = 0
-0 * 4 = 0
-0 * 5 = 0
-0 * 6 = 0
-0 * 7 = 0
-0 * 8 = 0
-0 * 9 = 0
-0 * 10 = 0
+Enter a number to print its table: Multiplication Table of 5:
+5 * 1 = 5
+5 * 2 = 10
+5 * 3 = 15
+5 * 4 = 20
+5 * 5 = 25
+5 * 6 = 30
+5 * 7 = 35
+5 * 8 = 40
+5 * 9 = 45
+5 * 10 = 50
 */

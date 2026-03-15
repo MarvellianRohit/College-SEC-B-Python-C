@@ -43,7 +43,7 @@ int main() {
 
 /*
 Output:
-Enter the number of elements: Enter 0 integers:
-Total Even numbers: 0
-Total Odd numbers: 0
+Enter the number of elements: Enter 5 integers:
+Total Even numbers: 2
+Total Odd numbers: 3
 */

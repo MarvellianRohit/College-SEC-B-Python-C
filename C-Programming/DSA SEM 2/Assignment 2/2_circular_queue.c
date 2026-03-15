@@ -121,3 +121,69 @@ void peek() {
 /*
 Output:
 Execution timed out (possibly waiting for input).*/
+
+/*
+Output:
+
+*** Circular Queue Menu ***
+1. Enqueue
+2. Dequeue
+3. Display
+4. Peek
+5. Exit
+Enter your choice: Enter value to enqueue: 
+Enqueued 10 into circular queue.
+
+*** Circular Queue Menu ***
+1. Enqueue
+2. Dequeue
+3. Display
+4. Peek
+5. Exit
+Enter your choice: Enter value to enqueue: 
+Enqueued 20 into circular queue.
+
+*** Circular Queue Menu ***
+1. Enqueue
+2. Dequeue
+3. Display
+4. Peek
+5. Exit
+Enter your choice: Enter value to enqueue: 
+Enqueued 30 into circular queue.
+
+*** Circular Queue Menu ***
+1. Enqueue
+2. Dequeue
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 
+Queue elements: 10 20 30 
+
+*** Circular Queue Menu ***
+1. Enqueue
+2. Dequeue
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 
+Dequeued element: 10
+
+*** Circular Queue Menu ***
+1. Enqueue
+2. Dequeue
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 
+Queue elements: 20 30 
+
+*** Circular Queue Menu ***
+1. Enqueue
+2. Dequeue
+3. Display
+4. Peek
+5. Exit
+Enter your choice: Exiting...
+*/

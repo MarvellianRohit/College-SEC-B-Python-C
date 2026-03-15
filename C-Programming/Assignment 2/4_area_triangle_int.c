@@ -46,5 +46,5 @@ int main() {
 
 /*
 Output:
-Enter base of the triangle (integer): Enter height of the triangle (integer): Area of triangle (Integer Arithmetic): 0
+Enter base of the triangle (integer): Enter height of the triangle (integer): Area of triangle (Integer Arithmetic): 25
 */

@@ -38,5 +38,5 @@ int main() {
 
 /*
 Output:
-Enter a 3-digit number: The middle digit is: 0
+Enter a 3-digit number: The middle digit is: 8
 */

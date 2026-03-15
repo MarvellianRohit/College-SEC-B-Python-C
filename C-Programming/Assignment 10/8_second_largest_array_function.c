@@ -95,6 +95,6 @@ int main() {
 
 /*
 Output:
-Enter size of array: Enter 0 integers:
- Invalid Input There is no second largest element.
+Enter size of array: Enter 5 integers:
+The second largest element is 8
 */

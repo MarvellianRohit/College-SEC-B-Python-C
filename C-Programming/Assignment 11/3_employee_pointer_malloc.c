@@ -121,7 +121,7 @@ Output:
 Enter Employee Details:
 ID: Name: Salary: 
 --- Employee Details ---
-ID: 0
-Name: 1
-Salary: 0.00
+ID: 101
+Name: Rohan
+Salary: 45000.00
 */

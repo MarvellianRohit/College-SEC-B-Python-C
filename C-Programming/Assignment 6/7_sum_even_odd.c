@@ -36,6 +36,6 @@ int main() {
 
 /*
 Output:
-Enter the value of N: Sum of Even numbers up to 0 = 0
-Sum of Odd numbers up to 0 = 0
+Enter the value of N: Sum of Even numbers up to 10 = 30
+Sum of Odd numbers up to 10 = 25
 */

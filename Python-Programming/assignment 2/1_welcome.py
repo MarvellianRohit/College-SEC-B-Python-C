@@ -8,6 +8,7 @@ print("Welcome Message:", message)
 
 Output:
 
-Enter a welcome message: Welcome Message: 
+Enter a welcome message: Hello Python
+Welcome Message: Hello Python
 
 '''

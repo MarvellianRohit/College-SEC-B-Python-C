@@ -181,3 +181,20 @@ int main() {
 /*
 Output:
 Execution timed out (possibly waiting for input).*/
+
+/*
+Output:
+Enter number of elements: Enter 5 integers:
+
+--- Sorting Algorithms ---
+1. Bubble Sort
+2. Selection Sort
+3. Exit
+Enter choice: Bubble Sorted: 12 22 25 34 64 
+
+--- Sorting Algorithms ---
+1. Bubble Sort
+2. Selection Sort
+3. Exit
+Enter choice: Exiting...
+*/

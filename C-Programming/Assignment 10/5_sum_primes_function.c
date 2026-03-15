@@ -70,5 +70,5 @@ int main() {
 
 /*
 Output:
-Enter a number: Sum of prime numbers up to 0 is: 0
+Enter a number: Sum of prime numbers up to 20 is: 77
 */

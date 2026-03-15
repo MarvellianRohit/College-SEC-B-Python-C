@@ -219,7 +219,11 @@ Output:
 Enter size of array: Enter elements of array:
 
 --- Frequency of Each Number ---
+3: 1 times
+1: 2 times
+4: 1 times
+5: 1 times
 
-Most Frequent Element: -1 (Frequency: 0)
-Least Frequent Element: -1 (Frequency: 1)
+Most Frequent Element: 1 (Frequency: 2)
+Least Frequent Element: 3 (Frequency: 1)
 */

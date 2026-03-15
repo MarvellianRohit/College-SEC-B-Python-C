@@ -124,9 +124,9 @@ int main() {
 
 /*
 Output:
-Enter initial number of elements (n): Enter 0 integers:
-Enter number of new elements to add (m): Enter 1 more integers:
+Enter initial number of elements (n): Enter 3 integers:
+Enter number of new elements to add (m): Enter 2 more integers:
 
 All elements after resizing:
-0 
+1 2 3 4 5
 */

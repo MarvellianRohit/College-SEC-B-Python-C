@@ -32,5 +32,5 @@ int main() {
 
 /*
 Output:
-Enter the value of N: Sum of squares of first 0 natural numbers is: 0
+Enter the value of N: Sum of squares of first 5 natural numbers is: 55
 */

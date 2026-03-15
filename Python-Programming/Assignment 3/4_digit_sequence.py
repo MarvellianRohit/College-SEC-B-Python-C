@@ -64,6 +64,7 @@ except ValueError:
 
 Output:
 
-Enter a single digit (1-7): Invalid input. Please enter a valid number.
+Enter a single digit (1-7): 7
+789
 
 '''

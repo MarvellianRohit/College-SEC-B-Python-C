@@ -51,5 +51,5 @@ int main() {
 
 /*
 Output:
-Enter a string: Reversed string: 
+Enter a string: Reversed string: olleH
 */

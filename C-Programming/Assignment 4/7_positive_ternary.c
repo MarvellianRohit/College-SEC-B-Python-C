@@ -36,5 +36,5 @@ int main() {
 
 /*
 Output:
-Enter an integer: 0 is not positive.
+Enter an integer: 42 is positive.
 */

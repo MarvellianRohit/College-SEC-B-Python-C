@@ -41,5 +41,5 @@ int main() {
 
 /*
 Output:
-Enter an integer: 0 is NOT between 10 and 100.
+Enter an integer: 55 is between 10 and 100.
 */

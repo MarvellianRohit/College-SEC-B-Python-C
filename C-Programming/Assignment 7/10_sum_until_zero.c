@@ -30,5 +30,5 @@ int main() {
 
 /*
 Output:
-Enter a number (enter 0 to stop): Total Sum = 0.00
+Enter a number (enter 0 to stop): Enter a number (enter 0 to stop): Enter a number (enter 0 to stop): Enter a number (enter 0 to stop): Total Sum = 12.00
 */

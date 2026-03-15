@@ -62,6 +62,6 @@ int main() {
 
 /*
 Output:
-Enter size of array: Enter 0 integers:
-Average of elements: nan
+Enter size of array: Enter 5 integers:
+Average of elements: 30.00
 */

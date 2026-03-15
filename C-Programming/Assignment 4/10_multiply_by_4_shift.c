@@ -42,5 +42,5 @@ int main() {
 
 /*
 Output:
-Enter an integer: 0 multiplied by 4 is 0
+Enter an integer: 6 multiplied by 4 is 24
 */

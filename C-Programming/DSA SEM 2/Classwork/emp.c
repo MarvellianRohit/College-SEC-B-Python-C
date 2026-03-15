@@ -66,3 +66,11 @@ Output:
 Enter the employee code: 
 Enter the employee name: 
 Code: 0 Name: 1*/
+
+/*
+Output:
+
+Enter the employee code: 
+Enter the employee name: 
+Code: 101 Name: John
+*/

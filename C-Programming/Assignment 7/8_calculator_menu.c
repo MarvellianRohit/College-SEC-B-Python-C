@@ -72,3 +72,23 @@ int main() {
 /*
 Output:
 Execution timed out (possibly waiting for input).*/
+
+/*
+Output:
+
+--- Calculator Menu ---
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+5. Exit
+Enter your choice: Enter two numbers: Result: 20.00
+
+--- Calculator Menu ---
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+5. Exit
+Enter your choice: Exiting program.
+*/

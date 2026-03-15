@@ -13,12 +13,10 @@ print(len(words))
 
 Output:
 
-Enter your message: 
-
-['']
-
-['']
-
-1
+Enter your message: Hello Python World
+Hello Python World
+['Hello', 'Python', 'World']
+['Hello', 'Python', 'World']
+3
 
 '''

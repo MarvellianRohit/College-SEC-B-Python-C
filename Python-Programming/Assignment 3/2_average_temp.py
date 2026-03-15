@@ -36,12 +36,13 @@ print(f"The average temperature of the week is: {average:.2f}")
 
 Output:
 
-Enter temperature for day 1: Traceback (most recent call last):
-
-  File "/Users/rohitchandra/Documents/college/Python-Programming/Assignment 3/2_average_temp.py", line 9, in <module>
-
-    temp = float(input(f"Enter temperature for day {i}: "))
-
-ValueError: could not convert string to float: ''
+Enter temperature for day 1: 30
+Enter temperature for day 2: 32
+Enter temperature for day 3: 35
+Enter temperature for day 4: 28
+Enter temperature for day 5: 33
+Enter temperature for day 6: 29
+Enter temperature for day 7: 31
+The average temperature of the week is: 31.14
 
 '''

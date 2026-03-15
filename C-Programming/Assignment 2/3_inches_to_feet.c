@@ -39,5 +39,5 @@ int main() {
 
 /*
 Output:
-Enter total inches: 0 inches is equal to 0 feet and 0 inches
+Enter total inches: 65 inches is equal to 5 feet and 5 inches
 */

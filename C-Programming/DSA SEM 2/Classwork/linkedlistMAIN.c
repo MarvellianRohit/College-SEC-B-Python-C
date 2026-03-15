@@ -493,3 +493,105 @@ int main() {
   return 0; // Return success code
 
 }
+
+/*
+Output:
+
+ --- Singly Linked List Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Insert at Front
+ 4. Insert at End
+ 5. Insert at Position
+ 6. Delete at Front
+ 7. Delete at End
+ 8. Delete at Position
+ 9. Count Nodes
+ 10. Search Node
+ 11. Reverse List
+ 12. Exit
+ Enter choice: 
+ Nodes to create: 
+ Enter data: 
+ Enter data: 
+ Enter data: 
+ --- Singly Linked List Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Insert at Front
+ 4. Insert at End
+ 5. Insert at Position
+ 6. Delete at Front
+ 7. Delete at End
+ 8. Delete at Position
+ 9. Count Nodes
+ 10. Search Node
+ 11. Reverse List
+ 12. Exit
+ Enter choice: 
+ The contents of List: 
+ 10--> 20--> 30-->NULL
+
+ --- Singly Linked List Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Insert at Front
+ 4. Insert at End
+ 5. Insert at Position
+ 6. Delete at Front
+ 7. Delete at End
+ 8. Delete at Position
+ 9. Count Nodes
+ 10. Search Node
+ 11. Reverse List
+ 12. Exit
+ Enter choice: 
+ Enter data: 
+ Node inserted at the beginning.
+ --- Singly Linked List Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Insert at Front
+ 4. Insert at End
+ 5. Insert at Position
+ 6. Delete at Front
+ 7. Delete at End
+ 8. Delete at Position
+ 9. Count Nodes
+ 10. Search Node
+ 11. Reverse List
+ 12. Exit
+ Enter choice: 
+ The contents of List: 
+ 10--> 10--> 20--> 30-->NULL
+
+ --- Singly Linked List Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Insert at Front
+ 4. Insert at End
+ 5. Insert at Position
+ 6. Delete at Front
+ 7. Delete at End
+ 8. Delete at Position
+ 9. Count Nodes
+ 10. Search Node
+ 11. Reverse List
+ 12. Exit
+ Enter choice: 
+ Total Nodes: 4
+ --- Singly Linked List Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Insert at Front
+ 4. Insert at End
+ 5. Insert at Position
+ 6. Delete at Front
+ 7. Delete at End
+ 8. Delete at Position
+ 9. Count Nodes
+ 10. Search Node
+ 11. Reverse List
+ 12. Exit
+ Enter choice:
+*/

@@ -19,6 +19,7 @@ print("the name is ", A)
 
 Output:
 
-Entr your Name: the name is  
+Entr your Name: Rohit
+the name is  Rohit
 
 '''

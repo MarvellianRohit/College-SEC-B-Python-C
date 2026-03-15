@@ -34,6 +34,7 @@ else:
 
 Output:
 
-Enter a 3-digit number: Invalid input. Please enter a valid 3-digit number.
+Enter a 3-digit number: 123
+The reversed number is: 321
 
 '''

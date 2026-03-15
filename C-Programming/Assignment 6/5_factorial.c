@@ -36,5 +36,5 @@ int main() {
 
 /*
 Output:
-Enter a number: Factorial of 0 = 1
+Enter a number: Factorial of 6 = 720
 */

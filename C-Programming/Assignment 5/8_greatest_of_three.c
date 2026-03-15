@@ -52,5 +52,5 @@ int main() {
 
 /*
 Output:
-Enter three numbers: 1 is the greatest.
+Enter three numbers: 19 is the greatest.
 */

@@ -251,5 +251,149 @@ int main() {
 
 /*
 Output:
-Enter number of students (max 50): Invalid number of students.
+Enter number of students (max 50): Enter marks for 3 students:
+Student 1: Student 2: Student 3: 
+--- Menu ---
+1. Display all marks
+2. Find average mark
+3. Find highest and lowest marks
+4. Count students passed
+5. Exit
+Enter your choice: Invalid choice!
+
+--- Menu ---
+1. Display all marks
+2. Find average mark
+3. Find highest and lowest marks
+4. Count students passed
+5. Exit
+Enter your choice: Invalid choice!
+
+--- Menu ---
+1. Display all marks
+2. Find average mark
+3. Find highest and lowest marks
+4. Count students passed
+5. Exit
+Enter your choice: Invalid choice!
+
+--- Menu ---
+1. Display all marks
+2. Find average mark
+3. Find highest and lowest marks
+4. Count students passed
+5. Exit
+Enter your choice: Invalid choice!
+
+--- Menu ---
+1. Display all marks
+2. Find average mark
+3. Find highest and lowest marks
+4. Count students passed
+5. Exit
+Enter your choice: Invalid choice!
+
+--- Menu ---
+1. Display all marks
+2. Find average mark
+3. Find highest and lowest marks
+4. Count students passed
+5. Exit
+Enter your choice: Invalid choice!
+
+--- Menu ---
+1. Display all marks
+2. Find average mark
+3. Find highest and lowest marks
+4. Count students passed
+5. Exit
+Enter your choice: Invalid choice!
+
+--- Menu ---
+1. Display all marks
+2. Find average mark
+3. Find highest and lowest marks
+4. Count students passed
+5. Exit
+Enter your choice: Invalid choice!
+
+--- Menu ---
+1. Display all marks
+2. Find average mark
+3. Find highest and lowest marks
+4. Count students passed
+5. Exit
+Enter your choice: Invalid choice!
+
+--- Menu ---
+1. Display all marks
+2. Find average mark
+3. Find highest and lowest marks
+4. Count students passed
+5. Exit
+Enter your choice: Invalid choice!
+
+--- Menu ---
+1. Display all marks
+2. Find average mark
+3. Find highest and lowest marks
+4. Count students passed
+5. Exit
+Enter your choice: Invalid choice!
+
+--- Menu ---
+1. Display all marks
+2. Find average mark
+3. Find highest and lowest marks
+4. Count students passed
+5. Exit
+Enter your choice: Invalid choice!
+
+--- Menu ---
+1. Display all marks
+2. Find average mark
+3. Find highest and lowest marks
+4. Count students passed
+5. Exit
+Enter your choice: 
+--- All Marks ---
+Student 1: 85
+Student 2: 90
+Student 3: 78
+
+--- Menu ---
+1. Display all marks
+2. Find average mark
+3. Find highest and lowest marks
+4. Count students passed
+5. Exit
+Enter your choice: 
+Average Mark: 84.33
+
+--- Menu ---
+1. Display all marks
+2. Find average mark
+3. Find highest and lowest marks
+4. Count students passed
+5. Exit
+Enter your choice: 
+Highest Mark: 90
+Lowest Mark: 78
+
+--- Menu ---
+1. Display all marks
+2. Find average mark
+3. Find highest and lowest marks
+4. Count students passed
+5. Exit
+Enter your choice: 
+Number of Students Passed: 3
+
+--- Menu ---
+1. Display all marks
+2. Find average mark
+3. Find highest and lowest marks
+4. Count students passed
+5. Exit
+Enter your choice: Exiting...
 */

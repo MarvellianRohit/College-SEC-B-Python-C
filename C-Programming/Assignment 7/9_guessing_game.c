@@ -37,3 +37,11 @@ int main() {
 /*
 Output:
 Execution timed out (possibly waiting for input).*/
+
+/*
+Output:
+I have picked a secret number.
+Guess the number: Too low! Try again.
+Guess the number: Too high! Try again.
+Guess the number: Congratulations! You guessed the correct number: 42
+*/

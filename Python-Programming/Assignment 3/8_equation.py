@@ -48,12 +48,9 @@ print(f"The result is: {result}")
 
 Output:
 
-Enter x: Traceback (most recent call last):
-
-  File "/Users/rohitchandra/Documents/college/Python-Programming/Assignment 3/8_equation.py", line 5, in <module>
-
-    x = float(input("Enter x: "))
-
-ValueError: could not convert string to float: ''
+Enter x: 2
+Enter y: 3
+Enter z: 1
+The result is: 172.84955592153875
 
 '''

@@ -44,5 +44,5 @@ int main() {
 
 /*
 Output:
-Enter total minutes: 0 minutes = 0 Hours and 0 Minutes
+Enter total minutes: 150 minutes = 2 Hours and 30 Minutes
 */

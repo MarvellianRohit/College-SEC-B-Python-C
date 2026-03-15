@@ -67,3 +67,29 @@ Output:
 2. Pop 
 3. Display 
  Enter the input: */
+
+/*
+Output:
+
+1. Push 
+2. Pop 
+3. Display 
+ Enter the input: Enter the value: 
+1. Push 
+2. Pop 
+3. Display 
+ Enter the input: Enter the value: 
+1. Push 
+2. Pop 
+3. Display 
+ Enter the input: Data to be deleted: 20
+1. Push 
+2. Pop 
+3. Display 
+ Enter the input: The data are:
+10
+1. Push 
+2. Pop 
+3. Display 
+ Enter the input:
+*/

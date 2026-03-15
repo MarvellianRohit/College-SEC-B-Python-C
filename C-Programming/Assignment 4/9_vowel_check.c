@@ -42,5 +42,5 @@ int main() {
 
 /*
 Output:
-Enter a character: 0 is not a vowel.
+Enter a character: a is a vowel.
 */

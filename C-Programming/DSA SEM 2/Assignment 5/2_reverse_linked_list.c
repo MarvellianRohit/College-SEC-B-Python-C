@@ -165,3 +165,13 @@ void displayList(struct Node *head) {
   printf("NULL\n"); // End marker
 
 }
+
+/*
+Output:
+Enter the number of nodes to create: Enter data for node 1: Enter data for node 2: Enter data for node 3: Enter data for node 4: Enter data for node 5: 
+List before reverse:
+1 -> 2 -> 3 -> 4 -> 5 -> NULL
+
+List after reverse:
+5 -> 4 -> 3 -> 2 -> 1 -> NULL
+*/

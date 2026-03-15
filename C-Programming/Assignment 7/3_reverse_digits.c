@@ -37,5 +37,5 @@ int main() {
 
 /*
 Output:
-Enter an integer: Reversed Number = 0
+Enter an integer: Reversed Number = 54321
 */

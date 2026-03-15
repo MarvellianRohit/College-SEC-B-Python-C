@@ -55,7 +55,7 @@ int main() {
 
 /*
 Output:
-Enter the number of elements: Enter 0 integers:
+Enter the number of elements: Enter 6 integers:
 Array with unique elements:
-
+1 2 3 4
 */

@@ -31,14 +31,10 @@ else:
 
 Output:
 
- Enter your age: Traceback (most recent call last):
-
-  File "/Users/rohitchandra/Documents/college/Python-Programming/print.py", line 1, in <module>
-
-    x,y = input(" Enter your age: ").split()
-
-    ^^^
-
-ValueError: not enough values to unpack (expected 2, got 0)
+ Enter your age: 20 25
+20 25
+Enter your age: 30
+30
+You are adult
 
 '''

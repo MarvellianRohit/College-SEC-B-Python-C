@@ -85,7 +85,7 @@ int main() {
 
 /*
 Output:
-Enter size of array: Enter 0 integers:
-Smallest element: 0
-Largest element: 0
+Enter size of array: Enter 5 integers:
+Smallest element: 1
+Largest element: 9
 */

@@ -41,5 +41,5 @@ int main() {
 
 /*
 Output:
-Enter a number: 0 is a multiple of both 3 and 5.
+Enter a number: 15 is a multiple of both 3 and 5.
 */

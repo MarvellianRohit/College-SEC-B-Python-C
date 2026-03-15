@@ -62,5 +62,5 @@ int main() {
 
 /*
 Output:
-Enter principal amount: Enter annual interest rate: Enter time in years: Monthly EMI: -0.00
+Enter principal amount: Enter annual interest rate: Enter time in years: Monthly EMI: 1195.08
 */

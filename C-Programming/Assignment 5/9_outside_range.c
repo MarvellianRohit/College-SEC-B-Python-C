@@ -45,5 +45,5 @@ int main() {
 
 /*
 Output:
-Enter a number: 0 lies OUTSIDE the range 50 to 100.
+Enter a number: 150 lies OUTSIDE the range 50 to 100.
 */

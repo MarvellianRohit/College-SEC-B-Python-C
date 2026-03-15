@@ -46,5 +46,5 @@ int main() {
 
 /*
 Output:
-Enter an integer: 0 is even.
+Enter an integer: 7 is odd.
 */

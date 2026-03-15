@@ -12,12 +12,7 @@ print(f"Area of the circle with radius {radius} is: {area:.2f}")
 
 Output:
 
-Enter the radius of the circle: Traceback (most recent call last):
-
-  File "/Users/rohitchandra/Documents/college/Python-Programming/assignment 2/6_area_of_circle.py", line 5, in <module>
-
-    radius = float(input("Enter the radius of the circle: "))
-
-ValueError: could not convert string to float: ''
+Enter the radius of the circle: 7
+Area of the circle with radius 7.0 is: 153.94
 
 '''

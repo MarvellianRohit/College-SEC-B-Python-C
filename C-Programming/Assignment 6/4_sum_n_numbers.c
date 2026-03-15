@@ -30,5 +30,5 @@ int main() {
 
 /*
 Output:
-Enter the value of N: Sum of first 0 natural numbers is: 0
+Enter the value of N: Sum of first 5 natural numbers is: 15
 */

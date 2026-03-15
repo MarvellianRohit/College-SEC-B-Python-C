@@ -39,5 +39,5 @@ int main() {
 
 /*
 Output:
-Enter an integer: Number of digits: 1
+Enter an integer: Number of digits: 5
 */

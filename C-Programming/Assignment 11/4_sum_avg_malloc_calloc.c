@@ -101,7 +101,7 @@ int main() {
 
 /*
 Output:
-Enter number of elements: Enter 0 integers:
-Sum = 0
-Average = nan
+Enter number of elements: Enter 4 integers:
+Sum = 100
+Average = 25.00
 */

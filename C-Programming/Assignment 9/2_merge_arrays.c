@@ -59,5 +59,5 @@ Output:
 Enter size of first array: Enter elements of first array:
 Enter size of second array: Enter elements of second array:
 Merged Array:
-2 
+1 2 3 4 5 6
 */

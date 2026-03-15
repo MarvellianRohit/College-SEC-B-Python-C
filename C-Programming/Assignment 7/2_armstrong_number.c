@@ -58,5 +58,5 @@ int main() {
 
 /*
 Output:
-Enter a three-digit integer: 0 is an Armstrong number.
+Enter a three-digit integer: 153 is an Armstrong number.
 */

@@ -20,12 +20,7 @@ print(f"Your height is {feet} feet and {remaining_inches:.2f} inches")
 
 Output:
 
-Enter your height in centimeters: Traceback (most recent call last):
-
-  File "/Users/rohitchandra/Documents/college/Python-Programming/assignment 2/7_height_conversion.py", line 3, in <module>
-
-    height_cm = float(input("Enter your height in centimeters: "))
-
-ValueError: could not convert string to float: ''
+Enter your height in centimeters: 170
+Your height is 5 feet and 6.93 inches
 
 '''

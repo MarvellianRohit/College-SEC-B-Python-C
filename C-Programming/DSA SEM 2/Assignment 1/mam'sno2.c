@@ -113,3 +113,12 @@ Output:
 2. Pop
 3. Display
 Enter the choice: */
+
+/*
+Output:
+
+1. Push
+2. Pop
+3. Display
+Enter the choice:
+*/

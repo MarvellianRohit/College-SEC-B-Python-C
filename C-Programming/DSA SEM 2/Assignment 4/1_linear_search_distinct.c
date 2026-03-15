@@ -43,5 +43,5 @@ int main() {
 Output:
 Enter 10 distinct numbers:
 Element 1: Element 2: Element 3: Element 4: Element 5: Element 6: Element 7: Element 8: Element 9: Element 10: 
-Enter the number to search: Number 1863789520 not found in the array.
+Enter the number to search: Number 1867819328 not found in the array.
 */

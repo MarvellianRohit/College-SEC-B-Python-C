@@ -134,3 +134,38 @@ void main() {
 /*
 Output:
 Execution timed out (possibly waiting for input).*/
+
+/*
+Output:
+
+Insert->1 
+Delete->2 
+Display->3 
+Quit-.4:
+Input the choice : 
+ Input the element :
+Insert->1 
+Delete->2 
+Display->3 
+Quit-.4:
+Input the choice : 
+ Input the element :
+Insert->1 
+Delete->2 
+Display->3 
+Quit-.4:
+Input the choice :  5 
+ 10 
+
+Insert->1 
+Delete->2 
+Display->3 
+Quit-.4:
+Input the choice : 
+ Element deleted 5:
+Insert->1 
+Delete->2 
+Display->3 
+Quit-.4:
+Input the choice :
+*/

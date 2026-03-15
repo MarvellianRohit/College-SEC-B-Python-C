@@ -233,3 +233,39 @@ int main() {
 
   return 0; // Return zero for standard program exit
 }
+
+/*
+Output:
+
+--- Deletion Restricted Deque Menu ---
+1. Insert at Rear
+2. Insert at Front
+3. Delete from Front (Only Exit Point)
+4. Display Deque
+5. Exit
+Enter choice (1-5): Value to insert at Rear: Inserted 10 at the Rear.
+
+--- Deletion Restricted Deque Menu ---
+1. Insert at Rear
+2. Insert at Front
+3. Delete from Front (Only Exit Point)
+4. Display Deque
+5. Exit
+Enter choice (1-5): Value to insert at Front: Inserted 20 at the Front.
+
+--- Deletion Restricted Deque Menu ---
+1. Insert at Rear
+2. Insert at Front
+3. Delete from Front (Only Exit Point)
+4. Display Deque
+5. Exit
+Enter choice (1-5): Deque State: 20 10 
+
+--- Deletion Restricted Deque Menu ---
+1. Insert at Rear
+2. Insert at Front
+3. Delete from Front (Only Exit Point)
+4. Display Deque
+5. Exit
+Enter choice (1-5): Closing Program... Done.
+*/

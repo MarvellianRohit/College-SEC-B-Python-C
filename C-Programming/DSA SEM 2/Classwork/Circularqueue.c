@@ -223,3 +223,42 @@ int main() {
 
   return 0; // Return 0 as standard practice for successful program completion
 }
+
+/*
+Output:
+
+--- Circular Queue Operations ---
+1. Enqueue (Insertion)
+2. Dequeue (Deletion)
+3. Display Queue
+4. Exit Program
+Enter your choice (1-4): Enter the integer value to be inserted: Inserted 5 successfully into the queue.
+
+--- Circular Queue Operations ---
+1. Enqueue (Insertion)
+2. Dequeue (Deletion)
+3. Display Queue
+4. Exit Program
+Enter your choice (1-4): Enter the integer value to be inserted: Inserted 10 successfully into the queue.
+
+--- Circular Queue Operations ---
+1. Enqueue (Insertion)
+2. Dequeue (Deletion)
+3. Display Queue
+4. Exit Program
+Enter your choice (1-4): Current Queue Elements: 5 10 
+
+--- Circular Queue Operations ---
+1. Enqueue (Insertion)
+2. Dequeue (Deletion)
+3. Display Queue
+4. Exit Program
+Enter your choice (1-4): Deleted 5 from the queue.
+
+--- Circular Queue Operations ---
+1. Enqueue (Insertion)
+2. Dequeue (Deletion)
+3. Display Queue
+4. Exit Program
+Enter your choice (1-4): Exiting the program. Goodbye!
+*/

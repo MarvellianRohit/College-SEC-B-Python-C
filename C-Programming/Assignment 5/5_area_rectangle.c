@@ -43,5 +43,5 @@ int main() {
 
 /*
 Output:
-Enter length: Enter breadth: Area of Rectangle = 0.00
+Enter length: Enter breadth: Area of Rectangle = 40.00
 */

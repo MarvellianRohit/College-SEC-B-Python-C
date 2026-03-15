@@ -187,3 +187,65 @@ int main() {
 /*
 Output:
 Execution timed out (possibly waiting for input).*/
+
+/*
+Output:
+
+--- Student Record Management (Stack) ---
+1. Push Student Record
+2. Pop Student Record
+3. Display Records (Stack Order)
+4. Display Records Sorted by Roll No
+5. Calculate & Display Total Marks
+6. Display Students by Marks (Descending)
+7. Exit
+Enter your choice: 
+Enter details for new student:
+Roll Number: Name: Maths Marks: English Marks: Student added successfully.
+
+--- Student Record Management (Stack) ---
+1. Push Student Record
+2. Pop Student Record
+3. Display Records (Stack Order)
+4. Display Records Sorted by Roll No
+5. Calculate & Display Total Marks
+6. Display Students by Marks (Descending)
+7. Exit
+Enter your choice: 
+Enter details for new student:
+Roll Number: Name: Maths Marks: English Marks: Student added successfully.
+
+--- Student Record Management (Stack) ---
+1. Push Student Record
+2. Pop Student Record
+3. Display Records (Stack Order)
+4. Display Records Sorted by Roll No
+5. Calculate & Display Total Marks
+6. Display Students by Marks (Descending)
+7. Exit
+Enter your choice: 
+--- Student Records (Stack Order) ---
+Roll  Name                 Maths      English   
+102   Bob                  75.00      80.00     
+101   Alice                85.50      90.00     
+
+--- Student Record Management (Stack) ---
+1. Push Student Record
+2. Pop Student Record
+3. Display Records (Stack Order)
+4. Display Records Sorted by Roll No
+5. Calculate & Display Total Marks
+6. Display Students by Marks (Descending)
+7. Exit
+Enter your choice: Deleted Student Record: Roll: 102, Name: Bob
+
+--- Student Record Management (Stack) ---
+1. Push Student Record
+2. Pop Student Record
+3. Display Records (Stack Order)
+4. Display Records Sorted by Roll No
+5. Calculate & Display Total Marks
+6. Display Students by Marks (Descending)
+7. Exit
+Enter your choice:
+*/

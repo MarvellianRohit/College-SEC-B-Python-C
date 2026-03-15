@@ -42,5 +42,5 @@ int main() {
 
 /*
 Output:
-Enter an integer: 0 is a palindrome.
+Enter an integer: 121 is a palindrome.
 */

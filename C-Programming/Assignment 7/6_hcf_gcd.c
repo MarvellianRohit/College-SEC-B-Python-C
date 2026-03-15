@@ -35,3 +35,8 @@ int main() {
 /*
 Output:
 Execution timed out (possibly waiting for input).*/
+
+/*
+Output:
+Enter two positive integers: HCF/GCD = 6
+*/

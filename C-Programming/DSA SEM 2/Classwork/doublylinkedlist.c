@@ -161,3 +161,26 @@ int main() {
 
   return 0;                                              // indicate successful program termination
 }
+
+/*
+Output:
+Enter the number of nodes: Enter Data: Enter Data: Enter Data: Enter Data: Enter Data: Enter Data: Enter Data: Enter Data: Enter Data: Enter Data: 
+Inserting a node at the beginning:
+
+Info for insertion at the beginning: Enter Data: Node inserted at the beginning.
+
+List after insertion at beginning:
+The content of the List are: 0 20 
+Inserting a node at the end:
+
+Info for insertion at the end: Enter Data: Node inserted at the end.
+
+List after insertion at end:
+The content of the List are: 0 20 0 
+Inserting a node at an intermediate position:
+
+Info for insertion at intermediate position: Enter Data: Enter position to insert (1-based): Node inserted at position 1 (beginning).
+
+List after insertion at intermediate position:
+The content of the List are: 0 0 20 0
+*/

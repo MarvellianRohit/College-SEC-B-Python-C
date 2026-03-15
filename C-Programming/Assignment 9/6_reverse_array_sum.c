@@ -68,10 +68,10 @@ int main() {
 
 /*
 Output:
-Enter array size: Enter 0 integers:
+Enter array size: Enter 5 integers:
 
-Original Array: 
-Reversed Array: 
-Sum of Even elements: 0
+Original Array: 10 20 30 40 50 
+Reversed Array: 50 40 30 20 10 
+Sum of Even elements: 150
 Sum of Odd elements:  0
 */

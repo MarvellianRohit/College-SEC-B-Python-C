@@ -74,10 +74,13 @@ int main() {
 
 /*
 Output:
-Enter number of elements: Enter 0 integers:
+Enter number of elements: Enter 5 integers:
 
 Element Frequency:
+1 occurs 2 times
+2 occurs 2 times
+3 occurs 1 times
 
-Most Frequent Element: -104923040 (Frequency: -1)
-Least Frequent Element: 1 (Frequency: 1)
+Most Frequent Element: 1 (Frequency: 2)
+Least Frequent Element: 3 (Frequency: 1)
 */

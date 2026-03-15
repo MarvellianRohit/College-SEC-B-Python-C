@@ -43,5 +43,5 @@ int main() {
 
 /*
 Output:
-Enter three integers: The largest number is 1
+Enter three integers: The largest number is 23
 */

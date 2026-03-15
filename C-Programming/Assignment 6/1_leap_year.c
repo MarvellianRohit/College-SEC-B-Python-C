@@ -32,5 +32,5 @@ int main() {
 
 /*
 Output:
-Enter a year: 0 is a Leap Year.
+Enter a year: 2024 is a Leap Year.
 */

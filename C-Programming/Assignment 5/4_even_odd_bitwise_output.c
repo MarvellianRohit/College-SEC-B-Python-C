@@ -53,5 +53,5 @@ int main() {
 
 /*
 Output:
-Enter a number: Result: 1
+Enter a number: Result: 0
 */

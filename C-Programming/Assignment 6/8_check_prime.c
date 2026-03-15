@@ -42,5 +42,5 @@ int main() {
 
 /*
 Output:
-Enter a positive integer: 0 is not a prime number.
+Enter a positive integer: 17 is a prime number.
 */

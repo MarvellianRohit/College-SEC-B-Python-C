@@ -59,5 +59,5 @@ int main() {
 
 /*
 Output:
-Enter a positive integer: Factorial of 0 = 1
+Enter a positive integer: Factorial of 6 = 720
 */

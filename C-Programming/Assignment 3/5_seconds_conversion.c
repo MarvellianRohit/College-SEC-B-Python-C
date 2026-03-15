@@ -52,5 +52,5 @@ int main() {
 
 /*
 Output:
-Enter total seconds: 0 seconds = 0 Hours, 0 Minutes, and 0 Seconds
+Enter total seconds: 3661 seconds = 1 Hours, 1 Minutes, and 1 Seconds
 */

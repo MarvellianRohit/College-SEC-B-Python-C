@@ -110,3 +110,9 @@ int main() {
 Output:
 
 Enter the number of data: */
+
+/*
+Output:
+
+Enter the number of data:
+*/

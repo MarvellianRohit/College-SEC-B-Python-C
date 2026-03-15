@@ -72,3 +72,51 @@ int main() {
 /*
 Output:
 Execution timed out (possibly waiting for input).*/
+
+/*
+Output:
+
+--- Stack Operations ---
+1. Push
+2. Pop
+3. Display
+4. Exit
+Enter your choice: Enter value to push: 10 pushed onto the stack.
+
+--- Stack Operations ---
+1. Push
+2. Pop
+3. Display
+4. Exit
+Enter your choice: Enter value to push: 20 pushed onto the stack.
+
+--- Stack Operations ---
+1. Push
+2. Pop
+3. Display
+4. Exit
+Enter your choice: Enter value to push: 30 pushed onto the stack.
+
+--- Stack Operations ---
+1. Push
+2. Pop
+3. Display
+4. Exit
+Enter your choice: Popped element: 30
+
+--- Stack Operations ---
+1. Push
+2. Pop
+3. Display
+4. Exit
+Enter your choice: Stack elements:
+20
+10
+
+--- Stack Operations ---
+1. Push
+2. Pop
+3. Display
+4. Exit
+Enter your choice:
+*/
