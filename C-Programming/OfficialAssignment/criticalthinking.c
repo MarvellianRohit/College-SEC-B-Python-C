@@ -142,7 +142,8 @@ Output:
 ========================================
 
 Welcome, Rohit!
-Please enter your roll number: 
+Please enter your roll number: 2301010155
+
 >>> Your Details:
 B (Books to return): 5
 W (Waiting students): 4
