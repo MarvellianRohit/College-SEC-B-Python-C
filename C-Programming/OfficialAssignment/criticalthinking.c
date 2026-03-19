@@ -138,7 +138,7 @@ int main() {
 /*
 Output:
 ========================================
-      ROHIT'S LIBRARY SYSTEM (BCA)     
+      ROHIT'S LIBRARY SYSTEM (BCA)
 ========================================
 
 Welcome, Rohit!

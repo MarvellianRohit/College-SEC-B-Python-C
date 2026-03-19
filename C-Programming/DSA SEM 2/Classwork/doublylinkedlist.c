@@ -99,6 +99,84 @@ void insertAtIntermediate() {
   printf("Node inserted at position %d.\n", pos); // confirm insertion to user
 }
 
+// Delete the first node of the doubly linked list
+void deleteAtBeginning() {
+  struct dlinklist *temp;                          // pointer to hold the node to be deleted
+  if (start == NULL) {                             // check if the list is empty
+    printf("List is empty. Nothing to delete.\n"); // inform user list is empty
+    return;                                        // exit the function
+  }
+  temp = start;                                    // store the current first node in temp
+  start = start->right;                            // move the start pointer to the second node
+  if (start != NULL) {                             // if the list has more than one node
+    start->left = NULL;                            // set the left pointer of the new first node to NULL
+  }
+  printf("Node with data %d deleted from the beginning.\n", temp->data); // confirm deletion
+  free(temp);                                      // free the memory of the deleted node
+}
+
+// Delete the last node of the doubly linked list
+void deleteAtEnd() {
+  struct dlinklist *temp, *prev;                   // pointers to traverse to the last node and its previous node
+  if (start == NULL) {                             // check if the list is empty
+    printf("List is empty. Nothing to delete.\n"); // inform user list is empty
+    return;                                        // exit the function
+  }
+  temp = start;                                    // begin traversal from the first node
+  prev = NULL;                                     // initialize prev to NULL
+  if (temp->right == NULL) {                       // if the list has only one node
+    start = NULL;                                  // list becomes empty
+  } else {
+    while (temp->right != NULL) {                  // traverse until the last node
+      prev = temp;                                 // prev follows temp
+      temp = temp->right;                          // move temp to the next node
+    }
+    prev->right = NULL;                            // set the right pointer of the previous node to NULL
+  }
+  printf("Node with data %d deleted from the end.\n", temp->data); // confirm deletion
+  free(temp);                                      // free the memory of the deleted node
+}
+
+// Delete a node from an intermediate position in the doubly linked list
+void deleteAtIntermediate() {
+  struct dlinklist *temp;                    // pointer to traverse to the target node
+  int pos, i;                               // pos: target position; i: loop counter
+
+  if (start == NULL) {                       // check if the list is empty
+    printf("List is empty. Nothing to delete.\n"); // inform user list is empty
+    return;                                  // exit the function
+  }
+
+  printf("\nEnter position to delete (1-based): "); // prompt for position
+  scanf("%d", &pos);                         // read the desired position from the user
+
+  if (pos <= 1) {                            // if position is 1 or less, delete from beginning
+    deleteAtBeginning();                     // reuse existing function
+    return;
+  }
+
+  temp = start;                              // begin traversal from the first node
+  for (i = 1; i < pos && temp != NULL; i++) {
+    temp = temp->right;                      // move to the next node
+  }
+
+  if (temp == NULL) {                        // if pos is greater than number of nodes
+    printf("Position %d is out of bounds.\n", pos); // inform user
+    return;
+  }
+
+  // Node to delete is found at temp
+  if (temp->right != NULL) {                 // if it's not the last node
+    temp->right->left = temp->left;          // next node's left points to previous node
+  }
+  if (temp->left != NULL) {                  // if it's not the first node
+    temp->left->right = temp->right;         // previous node's right points to next node
+  }
+
+  printf("Node with data %d deleted from position %d.\n", temp->data, pos); // confirm deletion
+  free(temp);                                // free the memory of the deleted node
+}
+
 // Function to display all nodes in the list from left to right
 void traverse() {
   struct dlinklist *temp;                          // declare a temp pointer for traversal
@@ -157,30 +235,67 @@ int main() {
   insertAtIntermediate();                                // insert a new node at a user-specified position
 
   printf("\nList after insertion at intermediate position:\n"); // heading for list display
-  traverse();                                            // display the final list
+  traverse();                                            // display the list
+
+  printf("\n\nDeleting a node from the beginning:\n");   // inform user about next operation
+  deleteAtBeginning();                                   // delete a node from the beginning
+
+  printf("\nList after deletion from beginning:\n");     // heading for list display
+  traverse();                                            // display the list
+
+  printf("\n\nDeleting a node from the end:\n");         // inform user about next operation
+  deleteAtEnd();                                         // delete a node from the end
+
+  printf("\nList after deletion from end:\n");           // heading for list display
+  traverse();                                            // display the list
+
+  printf("\n\nDeleting a node from an intermediate position:\n"); // inform user about next operation
+  deleteAtIntermediate();                                         // delete a node from intermediate position
+
+  printf("\nList after deletion from intermediate position:\n");  // heading for list display
+  traverse();                                                     // display the final list
 
   return 0;                                              // indicate successful program termination
 }
 
 /*
 Output:
-Enter the number of nodes: Enter Data: Enter Data: Enter Data: Enter Data: Enter Data: Enter Data: Enter Data: Enter Data: Enter Data: Enter Data: 
+Enter the number of nodes: Enter Data: Enter Data: Enter Data: 
 Inserting a node at the beginning:
 
 Info for insertion at the beginning: Enter Data: Node inserted at the beginning.
 
 List after insertion at beginning:
-The content of the List are: 0 20 
+The content of the List are: 40 10 
 Inserting a node at the end:
 
 Info for insertion at the end: Enter Data: Node inserted at the end.
 
 List after insertion at end:
-The content of the List are: 0 20 0 
+The content of the List are: 40 10 50 
 Inserting a node at an intermediate position:
 
-Info for insertion at intermediate position: Enter Data: Enter position to insert (1-based): Node inserted at position 1 (beginning).
+Info for insertion at intermediate position: Enter Data: Enter position to insert (1-based): Node inserted at position 2.
 
 List after insertion at intermediate position:
-The content of the List are: 0 0 20 0
+The content of the List are: 40 60 10 50 
+
+Deleting a node from the beginning:
+Node with data 40 deleted from the beginning.
+
+List after deletion from beginning:
+The content of the List are: 60 10 50 
+
+Deleting a node from the end:
+Node with data 50 deleted from the end.
+
+List after deletion from end:
+The content of the List are: 60 10 
+
+Deleting a node from an intermediate position:
+
+Enter position to delete (1-based): Node with data 10 deleted from position 2.
+
+List after deletion from intermediate position:
+The content of the List are: 60
 */
