@@ -1,5 +1,5 @@
 #include <stdio.h> // Include standard input/output library for printf and scanf
-#include <stdlib.h> // Include standard library for memory allocation functions (malloc, free)
+#include <stdlib.h> // Include standard library for dynamic memory allocation (malloc, free)
 
 // Structure definition for the linked list node
 struct dlinklist { // Define a structure named 'dlinklist' to represent a node
@@ -70,7 +70,29 @@ void delete_at_front() {
   printf("\n First node deleted."); // Confirm deletion to the user
 }
 
-// Function to delete at an intermediate position (middle)
+// Function to delete the last node (end) from the list
+void delete_at_end() {
+  struct dlinklist *temp, *prev; // Pointers for traversal and tracking previous node
+  if (start == NULL) { // Check if the list is empty
+    printf("\n List is empty."); // Print error message
+    return; // Exit function since there's nothing to delete
+  }
+  temp = start; // Start traversal from the beginning
+  if (temp->next == NULL) { // If there is only one node in the entire list
+    free(temp); // Free the single node
+    start = NULL; // Set start to NULL as the list is now completely empty
+  } else { // If the list contains more than one node
+    while (temp->next != NULL) { // Traverse precisely until the last node is reached
+      prev = temp; // Keep track of the node directly preceding the last one
+      temp = temp->next; // Progress 'temp' to the next subsequent node
+    }
+    prev->next = NULL; // Cut off the last node by making the second-to-last node the new end
+    free(temp); // Permanently release the memory allocated to the final terminal node
+  }
+  printf("\n Last node deleted."); // Send confirmation indicating successful terminal deletion
+}
+
+// Function to delete a node at a given intermediate position (positionwise)
 void delete_at_pos() {
   struct dlinklist *temp, *prev; // 'temp' for the target node, 'prev' for the node before it
   int pos, ctr, nodectr = 0; // Variables for target position, loop counter, and total node count
@@ -86,68 +108,72 @@ void delete_at_pos() {
     temp = temp->next; // Move to the next node
   }
 
-  printf("\n Enter position to delete: "); // Prompt the user for the position to delete
-  scanf("%d", &pos); // Read the position into 'pos' variable
+  printf("\n Enter position to delete: "); // Prompt the user for the exact positionwise deletion
+  scanf("%d", &pos); // Read the targeted position into 'pos' variable
 
   if (pos > nodectr || pos < 1) { // Validate position (must be between 1 and total number of nodes)
     printf("\n Node does not exist"); // Print error if position is invalid
     return; // Exit function
   }
 
-  if (pos == 1) { // If the chosen position is the first node
+  if (pos == 1) { // If the chosen position is the very first node
     delete_at_front(); // Use the dedicated function for front deletion
     return; // Exit function
   }
 
-  if (pos > 1 && pos <= nodectr) { // If it's a valid position greater than 1
+  if (pos > 1 && pos <= nodectr) { // If it's a valid targeted position greater than 1
     temp = start; // Reset 'temp' to the front of the list
     prev = start; // Set 'prev' to the front of the list initially
-    ctr = 1; // Start counter from position 1
-    while (ctr < pos) { // Loop until the target position is reached
-      prev = temp; // Keep track of the node just before the target node
-      temp = temp->next; // Move 'temp' forward to the next node
-      ctr = ctr + 1; // Increment current position counter
+    ctr = 1; // Start logical counter from baseline position 1
+    while (ctr < pos) { // Ascend sequentially until the target coordinate position is exactly matched
+      prev = temp; // Always capture the prior consecutive node just before advancing
+      temp = temp->next; // Advance the foremost targeting probe one sequence unit forward
+      ctr = ctr + 1; // Increment the logical synchronization counter value
     }
-    prev->next = temp->next; // Bypass the target node ('temp') by linking the previous node to the node after 'temp'
-    free(temp); // Free the memory occupied by the target node
-    printf("\n Node at position %d deleted.", pos); // Confirm successful deletion
+    prev->next = temp->next; // Create a bypass bridging precisely over the identified targeted positional node
+    free(temp); // Discard the isolated dynamically designated memory cluster safely
+    printf("\n Node at position %d deleted.", pos); // Issue localized confirmation of successful index deletion
   } else {
-    printf("\n Invalid Operation."); // Fallback error message
+    printf("\n Invalid Operation."); // Fallback baseline error message catcher
   }
 }
 
 int main() {
   int ch, n; // Variables for menu choice 'ch' and number of nodes 'n'
   while (1) { // Infinite loop to keep showing the menu until 'Exit' is chosen
-    printf("\n --- Singly Linked List Deletion Menu ---"); // Display menu title
-    printf("\n 1. Create List"); // Option to create a new linked list
-    printf("\n 2. Traverse List"); // Option to display the list elements
-    printf("\n 3. Delete at Front"); // Option to delete the first node
-    printf("\n 4. Delete at Position (Middle)"); // Option to delete at a specific position
-    printf("\n 5. Exit"); // Option to exit the program
-    printf("\n Enter choice: "); // Prompt user to enter their choice
-    scanf("%d", &ch); // Read the user's choice
+    printf("\n --- Singly Linked List Deletion Menu ---"); // Display logical menu title
+    printf("\n 1. Create List"); // Option to instantiate and construct a new linked list sequence
+    printf("\n 2. Traverse List"); // Option to visually sequentially render all existing elements
+    printf("\n 3. Delete at Front"); // Option to exclusively strip away sequential starting head block
+    printf("\n 4. Delete at End"); // Option to specifically snip off exactly precisely the furthest rear terminal component
+    printf("\n 5. Delete Positionwise"); // Option to meticulously isolate and extract an element at an arbitrarily designated coordinate integer
+    printf("\n 6. Exit"); // Execution halting instruction terminating total overarching continuous loop behavior
+    printf("\n Enter choice: "); // Emit synchronous halt commanding explicit external configuration digit input
+    scanf("%d", &ch); // Transcribe externally sourced string payload precisely to integer matrix registry standard
 
-    switch (ch) { // Switch-case block to handle the chosen menu option
+    switch (ch) { // Segregate specific control branches directly utilizing strict encoded categorical inputs
     case 1:
-      printf("\n Nodes to create: "); // Prompt for the number of initial nodes
-      scanf("%d", &n); // Read the number of nodes
-      createlist(n); // Call function to create the list with 'n' nodes
-      break; // Break out of the switch block
+      printf("\n Nodes to create: "); // Deliver textual interrogative directive asking scalar quantitative definition
+      scanf("%d", &n); // Intercept volume specification input mapping sequentially precisely into dedicated capacity integer
+      createlist(n); // Channel numeric parameter payload forcefully downwards into initial constructive subsystem logic
+      break; // Abort currently running consecutive conditional cascade flow instantly returning to macro shell layer
     case 2: 
-      traverse(); // Call traversal function to print the list
+      traverse(); // Direct processing pipeline downward completely into standalone diagnostic reading operational subroutine
       break; 
     case 3: 
-      delete_at_front(); // Call function to delete the head node
+      delete_at_front(); // Initiate strict localized top layer architectural de-allocation operational method payload directly
       break; 
     case 4: 
-      delete_at_pos(); // Call function to delete a node at a particular index
-      break; 
+      delete_at_end(); // Launch highly precise deep rear tier segment dislodging processing mechanism explicitly
+      break;
     case 5: 
-      exit(0); // Exit the entire C program successfully
+      delete_at_pos(); // Transmit active operational vector down toward advanced granular mathematical selective filtering function logic
+      break; 
+    case 6: 
+      exit(0); // Engage absolute application layer comprehensive thread annihilation systems ensuring complete program shutdown
     default: 
-      printf("\n Invalid choice!"); // Inform the user if the input does not match any menu option
+      printf("\n Invalid choice!"); // Distribute general catch-all feedback identifying unrecognized aberrant arbitrary input vectors cleanly
     }
   }
-  return 0; // Return 0 to indicate successful program execution to the OS
+  return 0; // Transmit functional execution successful zeroed parameter return footprint upward to native OS host shell environment unconditionally
 }
