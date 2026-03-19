@@ -177,3 +177,125 @@ int main() {
   }
   return 0; // Transmit functional execution successful zeroed parameter return footprint upward to native OS host shell environment unconditionally
 }
+
+/*
+ --- Singly Linked List Deletion Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Delete at Front
+ 4. Delete at End
+ 5. Delete Positionwise
+ 6. Exit
+ Enter choice: 1
+ Nodes to create: 3
+ Enter data: 10
+ Enter data: 20
+ Enter data: 30
+ 
+ --- Singly Linked List Deletion Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Delete at Front
+ 4. Delete at End
+ 5. Delete Positionwise
+ 6. Exit
+ Enter choice: 2
+ The contents of List: 
+ 10--> 20--> 30-->NULL
+ 
+ --- Singly Linked List Deletion Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Delete at Front
+ 4. Delete at End
+ 5. Delete Positionwise
+ 6. Exit
+ Enter choice: 3
+ First node deleted.
+ 
+ --- Singly Linked List Deletion Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Delete at Front
+ 4. Delete at End
+ 5. Delete Positionwise
+ 6. Exit
+ Enter choice: 2
+ The contents of List: 
+ 20--> 30-->NULL
+ 
+ --- Singly Linked List Deletion Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Delete at Front
+ 4. Delete at End
+ 5. Delete Positionwise
+ 6. Exit
+ Enter choice: 4
+ Last node deleted.
+ 
+ --- Singly Linked List Deletion Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Delete at Front
+ 4. Delete at End
+ 5. Delete Positionwise
+ 6. Exit
+ Enter choice: 2
+ The contents of List: 
+ 20-->NULL
+ 
+ --- Singly Linked List Deletion Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Delete at Front
+ 4. Delete at End
+ 5. Delete Positionwise
+ 6. Exit
+ Enter choice: 1
+ Nodes to create: 2
+ Enter data: 40
+ Enter data: 50
+ 
+ --- Singly Linked List Deletion Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Delete at Front
+ 4. Delete at End
+ 5. Delete Positionwise
+ 6. Exit
+ Enter choice: 2
+ The contents of List: 
+ 20--> 40--> 50-->NULL
+ 
+ --- Singly Linked List Deletion Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Delete at Front
+ 4. Delete at End
+ 5. Delete Positionwise
+ 6. Exit
+ Enter choice: 5
+ Enter position to delete: 2
+ Node at position 2 deleted.
+ 
+ --- Singly Linked List Deletion Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Delete at Front
+ 4. Delete at End
+ 5. Delete Positionwise
+ 6. Exit
+ Enter choice: 2
+ The contents of List: 
+ 20--> 50-->NULL
+ 
+ --- Singly Linked List Deletion Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Delete at Front
+ 4. Delete at End
+ 5. Delete Positionwise
+ 6. Exit
+ Enter choice: 6
+*/

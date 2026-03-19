@@ -108,3 +108,49 @@ int main() {
   }
   return 0; // Return 0 to indicate successful program execution to the OS
 }
+
+/*
+ --- Singly Linked List Reversal Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Reverse List
+ 4. Exit
+ Enter choice: 1
+ Nodes to create: 3
+ Enter data: 10
+ Enter data: 20
+ Enter data: 30
+ 
+ --- Singly Linked List Reversal Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Reverse List
+ 4. Exit
+ Enter choice: 2
+ The contents of List: 
+ 10--> 20--> 30-->NULL
+ 
+ --- Singly Linked List Reversal Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Reverse List
+ 4. Exit
+ Enter choice: 3
+ List reversed successfully.
+ 
+ --- Singly Linked List Reversal Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Reverse List
+ 4. Exit
+ Enter choice: 2
+ The contents of List: 
+ 30--> 20--> 10-->NULL
+ 
+ --- Singly Linked List Reversal Menu ---
+ 1. Create List
+ 2. Traverse List
+ 3. Reverse List
+ 4. Exit
+ Enter choice: 4
+*/
