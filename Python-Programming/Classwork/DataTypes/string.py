@@ -1,6 +1,10 @@
 # The sample text provided
 
-from loop1 import list1 # Import list1 from the loop1 module (requires loop1.py to exist)
+import sys
+import os
+# Add the parent directory to sys.path to allow imports from other subdirectories
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from ControlFlow.loop1 import list1 # Import list1 from the loop1 module in ControlFlow directory
 
 
 # Assigning a multi-line string containing sample geopolitical data to the variable 'data'
