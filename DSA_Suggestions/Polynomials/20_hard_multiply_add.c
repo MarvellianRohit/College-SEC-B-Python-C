@@ -2,6 +2,27 @@
  * ============================================================
  * PROGRAM 20: HARD MULTIPLY AND ADD: (P1*P2) + (P1*P3)
  * ============================================================
+ * Topic: Polynomials (Simplified Version)
+ * Language: C
+ * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * This program performs a complex polynomial calculation: 
+ * (P1 * P2) + (P1 * P3). This is equivalent to P1 * (P2 + P3). 
+ * It showcases nested loops for multiplication followed by 
+ * array addition to get the final result.
+ *
+ * ALGORITHM:
+ * 1. START
+ * 2. Define P1, P2, and P3.
+ * 3. Initialize prod1 and prod2 arrays to zero.
+ * 4. Calculate prod1 = P1 * P2 using nested loops.
+ * 5. Calculate prod2 = P1 * P3 using nested loops.
+ * 6. For each index 'i':
+ *    a. Result[i] = prod1[i] + prod2[i].
+ * 7. Display the final polynomial.
+ * 8. STOP
+ * ============================================================
  */
 
 #include <stdio.h>
@@ -32,3 +53,11 @@ int main() {
 
     return 0;
 }
+
+/*
+ * ============================================================
+ * EXPECTED OUTPUT:
+ * Result of (P1*P2) + (P1*P3):
+ * 2x^2 + 7x^1 + 5x^0 
+ * ============================================================
+ */

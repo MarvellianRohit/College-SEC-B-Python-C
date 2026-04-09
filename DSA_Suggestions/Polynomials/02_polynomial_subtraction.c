@@ -5,10 +5,21 @@
  * Topic: Polynomials (Simplified Version)
  * Language: C
  * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * This program performs polynomial subtraction. It works by 
+ * taking two polynomials stored in arrays and subtracting the 
+ * coefficients of matching powers (indices). 
+ * Resulting Coefficient = P1 Coefficient - P2 Coefficient.
  *
- * CONCEPT:
- * Subtraction is just like addition, but we subtract the 
- * coefficients at each index: result[i] = p1[i] - p2[i]
+ * ALGORITHM:
+ * 1. START
+ * 2. Input the degree and coefficients for P1 and P2.
+ * 3. Find the higher degree (maxDeg).
+ * 4. Loop from i = 0 to maxDeg:
+ *    a. Result[i] = P1[i] - P2[i].
+ * 5. Display the subtracted polynomial.
+ * 6. STOP
  * ============================================================
  */
 
@@ -64,3 +75,26 @@ int main() {
 
     return 0;
 }
+
+/*
+ * ============================================================
+ * EXPECTED OUTPUT:
+ * === POLYNOMIAL SUBTRACTION ===
+ *
+ * First Polynomial:
+ * Enter degree: 2
+ *   Enter coefficient for x^0: 5
+ *   Enter coefficient for x^1: 10
+ *   Enter coefficient for x^2: 3
+ *
+ * Second Polynomial:
+ * Enter degree: 2
+ *   Enter coefficient for x^0: 2
+ *   Enter coefficient for x^1: 4
+ *   Enter coefficient for x^2: 1
+ *
+ * First:  3x^2 + 10x^1 + 5x^0 
+ * Second: 1x^2 + 4x^1 + 2x^0 
+ * Result: 2x^2 + 6x^1 + 3x^0 
+ * ============================================================
+ */

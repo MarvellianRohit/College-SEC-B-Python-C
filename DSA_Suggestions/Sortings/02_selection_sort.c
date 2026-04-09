@@ -5,13 +5,24 @@
  * Topic: Sorting (Simplified)
  * Language: C
  * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * Selection Sort logic is very intuitive: it splits the array 
+ * into two parts: sorted and unsorted. It repeatedly finds the 
+ * smallest element from the unsorted part and swaps it with the 
+ * first element of the unsorted part, thus "selecting" the 
+ * correct element for each position.
  *
- * WHAT IS SELECTION SORT?
- * It works by repeatedly finding the MINIMUM element from 
- * the unsorted part and putting it at the beginning.
- *
- * Imagine looking through a pile of cards and picking the 
- * smallest one to put in your hand.
+ * ALGORITHM:
+ * 1. START
+ * 2. Loop i from 0 to n-2 (target position to fill).
+ * 3. Assume arr[i] is the minimum (min_idx = i).
+ * 4. Loop j from i+1 to n-1 (find the actual minimum).
+ *    a. IF arr[j] < arr[min_idx]:
+ *       i. Update min_idx = j.
+ * 5. Swap arr[i] with arr[min_idx].
+ * 6. Repeat until the entire array is sorted.
+ * 7. STOP
  * ============================================================
  */
 
@@ -74,5 +85,18 @@ int main() {
  * Selection sort always makes O(n^2) comparisons, regardless 
  * of whether the array is already sorted or not.
  * However, it performs fewer Swaps compared to Bubble Sort.
+ * ============================================================
+ * 
+ * EXPECTED OUTPUT:
+ * === SELECTION SORT ===
+ *
+ * Original array:
+ *   [ 29 10 14 37 13 ]
+ *
+ * Pass 1: (found minimum 10 at index 1)
+ *   [ 10 29 14 37 13 ]
+ * ...
+ * Sorted array:
+ *   [ 10 13 14 29 37 ]
  * ============================================================
  */

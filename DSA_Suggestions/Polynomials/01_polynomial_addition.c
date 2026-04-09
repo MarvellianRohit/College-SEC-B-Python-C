@@ -5,12 +5,23 @@
  * Topic: Polynomials (Simplified Version)
  * Language: C
  * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * This program implements polynomial addition using an array 
+ * representation. In this method, the index of the array 
+ * represents the power of 'x', and the value stored at that 
+ * index represents the coefficient.
+ * For example: 3x^2 + 5x + 1 is stored as poly[2]=3, poly[1]=5, poly[0]=1.
  *
- * CONCEPT:
- * A polynomial like 3x^2 + 5x + 7 can be stored in an array:
- *   Index = Power of x
- *   Value = Coefficient
- *   poly[2] = 3 means 3x^2
+ * ALGORITHM:
+ * 1. START
+ * 2. Input degree and coefficients of Polynomial 1 (P1).
+ * 3. Input degree and coefficients of Polynomial 2 (P2).
+ * 4. Determine the maximum degree (maxDeg) between P1 and P2.
+ * 5. Loop from i = 0 up to maxDeg:
+ *    a. Result[i] = P1[i] + P2[i].
+ * 6. Display the resulting polynomial.
+ * 7. STOP
  * ============================================================
  */
 
@@ -95,3 +106,25 @@ int main() {
 
     return 0;
 }
+
+/*
+ * ============================================================
+ * EXPECTED OUTPUT:
+ * === POLYNOMIAL ADDITION ===
+ *
+ * First Polynomial:
+ * Enter degree: 2
+ *   Enter coefficient for x^0: 1
+ *   Enter coefficient for x^1: 2
+ *   Enter coefficient for x^2: 3
+ *
+ * Second Polynomial:
+ * Enter degree: 1
+ *   Enter coefficient for x^0: 4
+ *   Enter coefficient for x^1: 5
+ *
+ * First:  3x^2 + 2x^1 + 1x^0 
+ * Second: 5x^1 + 4x^0 
+ * Sum:    3x^2 + 7x^1 + 5x^0 
+ * ============================================================
+ */

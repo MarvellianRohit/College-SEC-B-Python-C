@@ -5,10 +5,24 @@
  * Topic: Polynomials (Simplified Version)
  * Language: C
  * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * This program performs Synthetic Division, which is a shortcut 
+ * method of dividing a polynomial by a linear factor of the 
+ * form (x - a). It calculates the coefficients of the quotient 
+ * polynomial and the final remainder.
  *
- * CONCEPT:
- * Dividing a polynomial P(x) by (x - a).
- * This uses a simplified method to find the QUOTIENT and REMAINDER.
+ * ALGORITHM:
+ * 1. START
+ * 2. Define the dividend polynomial P(x) and the divisor constant 'a'.
+ * 3. Take the first coefficient of P(x) as the first coefficient of 
+ *    the quotient.
+ * 4. For each subsequent coefficient:
+ *    a. Multiply 'a' with the previous quotient coefficient and 
+ *       add it to the current dividend coefficient.
+ * 5. The last result is the remainder; the others are quotient 
+ *    coefficients.
+ * 6. STOP
  * ============================================================
  */
 
@@ -39,3 +53,15 @@ int main() {
 
     return 0;
 }
+
+/*
+ * ============================================================
+ * EXPECTED OUTPUT:
+ * === POLYNOMIAL SYNTHETIC DIVISION ===
+ * P(x) = 3x^2 + 2x^1 + 5x^0 
+ * Divisor = (x - 2)
+ *
+ * Quotient: 3x^1 + 8x^0 
+ * Remainder: 21
+ * ============================================================
+ */

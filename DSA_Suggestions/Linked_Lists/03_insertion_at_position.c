@@ -5,15 +5,28 @@
  * Topic: Singly Linked List (Simple Version)
  * Language: C
  * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * Insertion at a position means adding a new node at a specific 
+ * index (e.g., 2nd or 3rd position). To do this, we must reach 
+ * the node just BEFORE that position (position - 1) and rework 
+ * the pointers to include the new node in the middle.
  *
- * WHAT IS "INSERTION AT POSITION"?
- * Adding a node at a specific place, e.g., position 3.
- *
- * Steps:
- * 1. If position is 1, use "Insert at Beginning" logic.
- * 2. Otherwise, walk to node at (position - 1).
- * 3. Connect new Node to the old next node.
- * 4. Connect (position - 1) node to our new Node.
+ * ALGORITHM:
+ * 1. START
+ * 2. Create a newNode and assign data.
+ * 3. IF (position == 1):
+ *    a. Set newNode->next = head.
+ *    b. Return newNode as the new head.
+ * 4. ELSE:
+ *    a. Create temp pointer at head.
+ *    b. Traverse the list for (position - 2) nodes.
+ *    c. IF (temp == NULL):
+ *       i. Print "Invalid position" and STOP.
+ *    d. Set newNode->next = temp->next.
+ *    e. Set temp->next = newNode.
+ * 5. Return head.
+ * 6. STOP
  * ============================================================
  */
 
@@ -109,5 +122,22 @@ int main() {
  * the 'next' pointer of the node at position 'n-1'.
  *
  * Example: To insert at pos 3, we need to change pos 2's next.
+ * ============================================================
+ * 
+ * EXPECTED OUTPUT:
+ * === SINGLY LINKED LIST: INSERT AT POSITION ===
+ *
+ *   >> Inserted 10 at position 1.
+ *   >> Inserted 20 at position 2.
+ *   >> Inserted 30 at position 3.
+ *   List: [10] -> [20] -> [30] -> NULL
+ *
+ * Inserting 15 at position 2:
+ *   >> Inserted 15 at position 2.
+ *   List: [10] -> [15] -> [20] -> [30] -> NULL
+ *
+ * Inserting 25 at position 4:
+ *   >> Inserted 25 at position 4.
+ *   List: [10] -> [15] -> [20] -> [25] -> [30] -> NULL
  * ============================================================
  */

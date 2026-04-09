@@ -5,12 +5,22 @@
  * Topic: Sorting (Simplified)
  * Language: C
  * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * Bubble Sort is a simple sorting algorithm that repeatedly steps 
+ * through the list, compares adjacent elements and swaps them if 
+ * they are in the wrong order. The pass through the list is 
+ * repeated until the list is sorted. The largest elements 
+ * "bubble up" to their correct position at the end of the array.
  *
- * WHAT IS BUBBLE SORT?
- * It is a simple sorting algorithm that works by repeatedly 
- * swapping adjacent elements if they are in the wrong order.
- *
- * In each pass, the largest element "bubbles up" to the end.
+ * ALGORITHM:
+ * 1. START
+ * 2. Loop i from 0 to size-2 (Total passes).
+ * 3. Loop j from 0 to size-i-2 (Comparisons in each pass).
+ * 4. IF arr[j] > arr[j+1]:
+ *    a. Swap arr[j] and arr[j+1].
+ * 5. Repeat until the array is sorted.
+ * 6. STOP
  * ============================================================
  */
 
@@ -75,5 +85,22 @@ int main() {
  * the largest unsorted number moves to its final position.
  *
  * Time Complexity: O(n^2) - because of the nested loops.
+ * ============================================================
+ * 
+ * EXPECTED OUTPUT:
+ * === BUBBLE SORT ===
+ *
+ * Original array:
+ *   [ 64 34 25 12 22 ]
+ *
+ * Pass 1:
+ *   Swapped 34 and 64
+ *   Swapped 25 and 64
+ *   Swapped 12 and 64
+ *   Swapped 22 and 64
+ *   [ 34 25 12 22 64 ]
+ * ...
+ * Sorted array:
+ *   [ 12 22 25 34 64 ]
  * ============================================================
  */

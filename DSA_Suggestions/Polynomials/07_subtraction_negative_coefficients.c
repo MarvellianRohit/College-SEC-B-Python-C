@@ -3,6 +3,22 @@
  * PROGRAM 07: SUBTRACTION WITH NEGATIVE COEFFICIENTS
  * ============================================================
  * Topic: Polynomials (Simplified Version)
+ * Language: C
+ * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * This program demonstrates how to handle subtraction when the 
+ * polynomials contain negative coefficients. The logic remains 
+ * the same: Result[i] = P1[i] - P2[i], but we must be careful 
+ * with sign changes (e.g., subtracting -2 is the same as adding 2).
+ *
+ * ALGORITHM:
+ * 1. START
+ * 2. Define P1 and P2 with both positive and negative coefficients.
+ * 3. For each index 'i':
+ *    a. Calculate res[i] = p1[i] - p2[i].
+ * 4. Display the resulting polynomial with proper signs.
+ * 5. STOP
  * ============================================================
  */
 
@@ -26,3 +42,11 @@ int main() {
 
     return 0;
 }
+
+/*
+ * ============================================================
+ * EXPECTED OUTPUT:
+ * Result (P1 - P2):
+ *   4x^2 + -6x^1 + -5x^0 
+ * ============================================================
+ */

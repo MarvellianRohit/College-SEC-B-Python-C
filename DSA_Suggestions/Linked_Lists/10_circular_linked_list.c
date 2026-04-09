@@ -5,12 +5,26 @@
  * Topic: Circular Linked List (Simplified)
  * Language: C
  * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * A Circular Linked List is a variation of a Linked List in which 
+ * the last node points back to the first node (head) instead of 
+ * NULL. This creates a circular loop, allowing the list to be 
+ * traversed infinitely.
  *
- * WHAT IS A CIRCULAR LINKED LIST?
- * A list where the LAST node's 'next' pointer points back 
- * to the HEAD instead of NULL.
- *
- * It forms a continuous loop!
+ * ALGORITHM (Insertion at End):
+ * 1. START
+ * 2. Create a new Node (newNode) and assign data.
+ * 3. IF (head == NULL):
+ *    a. Set head = newNode.
+ *    b. Set newNode->next = head.
+ * 4. ELSE:
+ *    a. Create temp pointer starting at head.
+ *    b. WHILE (temp->next != head):
+ *       i. Move temp to next node.
+ *    c. Set temp->next = newNode.
+ *    d. Set newNode->next = head.
+ * 5. STOP
  * ============================================================
  */
 
@@ -85,3 +99,15 @@ int main() {
 
     return 0;
 }
+
+/*
+ * ============================================================
+ * EXPECTED OUTPUT:
+ * === CIRCULAR LINKED LIST ===
+ *
+ *   >> Inserted 10 (first node).
+ *   >> Inserted 20 at end.
+ *   >> Inserted 30 at end.
+ *   List: [10] -> [20] -> [30] -> (Back to Head: 10)
+ * ============================================================
+ */

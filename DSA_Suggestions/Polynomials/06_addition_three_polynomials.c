@@ -3,6 +3,22 @@
  * PROGRAM 06: ADDITION OF THREE POLYNOMIALS
  * ============================================================
  * Topic: Polynomials (Simplified Version)
+ * Language: C
+ * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * This program demonstrates adding three separate polynomials 
+ * together. The process is the same as adding two: we simply 
+ * accumulate the coefficients of matching powers from all 
+ * three polynomials into a single result array.
+ *
+ * ALGORITHM:
+ * 1. START
+ * 2. Define three polynomials P1, P2, and P3 in arrays.
+ * 3. Initialize a Result array (res) with zeros.
+ * 4. Add P1 to res, then P2 to res, then P3 to res.
+ * 5. Display the final combined polynomial.
+ * 6. STOP
  * ============================================================
  */
 
@@ -26,3 +42,11 @@ int main() {
 
     return 0;
 }
+
+/*
+ * ============================================================
+ * EXPECTED OUTPUT:
+ * Resulting Polynomial:
+ *   4x^2 + 7x^1 + 7x^0 
+ * ============================================================
+ */

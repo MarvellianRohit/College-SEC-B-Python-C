@@ -5,15 +5,29 @@
  * Topic: Singly Linked List (Simple Version)
  * Language: C
  * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * Deletion at a specific position involves removing a node at a 
+ * given index (e.g., 2nd node). We must reach the node just 
+ * PRIOR to the target (position - 1), change its 'next' pointer 
+ * to skip the target node, and then free the target node's memory.
  *
- * WHAT IS "DELETION AT POSITION"?
- * Removing a node from a specific place (e.g., position 2).
- *
- * Steps:
- * 1. If position is 1, use "Delete from Beginning" logic.
- * 2. Otherwise, walk to node at (position - 1).
- * 3. Link (position - 1) node to (position + 1) node.
- * 4. Free the node at the specified position.
+ * ALGORITHM:
+ * 1. START
+ * 2. IF (head == NULL):
+ *    a. Print "List is empty" and STOP.
+ * 3. IF (position == 1):
+ *    a. Save head in temp.
+ *    b. head = head->next.
+ *    c. Free temp and STOP.
+ * 4. Create temp pointer starting at head.
+ * 5. Traverse the list until reaching node at (position - 1).
+ * 6. IF (temp == NULL OR temp->next == NULL):
+ *    a. Print "Position out of range" and STOP.
+ * 7. Save the target node (nodeToDelete = temp->next).
+ * 8. Set temp->next = nodeToDelete->next.
+ * 9. Free nodeToDelete.
+ * 10. STOP
  * ============================================================
  */
 
@@ -115,5 +129,20 @@ int main() {
  * To delete node 'n', you must reach node 'n-1'.
  * You then point 'n-1' to 'n+1'. This "skips" 'n' in the chain.
  * Finally, you 'free' node 'n' so its memory is released.
+ * ============================================================
+ * 
+ * EXPECTED OUTPUT:
+ * === SINGLY LINKED LIST: DELETE AT POSITION ===
+ *
+ * Original list:
+ *   List: [10] -> [20] -> [30] -> [40] -> NULL
+ *
+ * Deleting from position 2:
+ *   >> Deleted 20 from position 2.
+ *   List: [10] -> [30] -> [40] -> NULL
+ *
+ * Deleting from position 1:
+ *   >> Deleted 10 from position 1.
+ *   List: [30] -> [40] -> NULL
  * ============================================================
  */

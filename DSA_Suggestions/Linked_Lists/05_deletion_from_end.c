@@ -5,15 +5,29 @@
  * Topic: Singly Linked List (Simple Version)
  * Language: C
  * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * Deletion from the end requires us to reach the second-to-last 
+ * node. We set its 'next' pointer to NULL, effectively 
+ * disconnecting the last node, and then free the memory of 
+ * the disconnected last node.
  *
- * WHAT IS "DELETION FROM END"?
- * Removing the very last node from the list.
- *
- * Steps:
- * 1. If list is empty, nothing to do.
- * 2. If only one node exists, delete it and set Head to NULL.
- * 3. Otherwise, walk to the SECOND-TO-LAST node.
- * 4. Free the last node and set the second-to-last's 'next' to NULL.
+ * ALGORITHM:
+ * 1. START
+ * 2. IF (head == NULL):
+ *    a. Print "List is empty, deletion impossible" and STOP.
+ * 3. IF (head->next == NULL):
+ *    a. Save head in temp.
+ *    b. Set head = NULL.
+ *    c. Free temp.
+ * 4. ELSE:
+ *    a. Create temp pointer starting at head.
+ *    b. WHILE (temp->next->next != NULL):
+ *       i. Move temp to the next node.
+ *    c. Save the last node (lastNode = temp->next).
+ *    d. Set temp->next = NULL.
+ *    e. Free lastNode.
+ * 5. STOP
  * ============================================================
  */
 
@@ -113,5 +127,21 @@ int main() {
  * We want to stop at the node BEFORE the last node. 
  * 'temp->next' is the last node, and 'temp->next->next' is NULL.
  * This is how we find the second-to-last node.
+ * ============================================================
+ * 
+ * EXPECTED OUTPUT:
+ * === SINGLY LINKED LIST: DELETE FROM END ===
+ *
+ * Original list:
+ *   List: [10] -> [20] -> [30] -> NULL
+ *
+ *   >> Deleted 30 from the end.
+ *   List: [10] -> [20] -> NULL
+ *
+ *   >> Deleted 20 from the end.
+ *   List: [10] -> NULL
+ *
+ *   >> Deleted 10 (only node).
+ *   List: [EMPTY]
  * ============================================================
  */

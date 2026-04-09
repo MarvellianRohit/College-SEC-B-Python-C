@@ -5,11 +5,25 @@
  * Topic: Singly Linked List (Simplified)
  * Language: C
  * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * This program is a comprehensive tool that allows the user to 
+ * interactively manage a Singly Linked List. It provides functions 
+ * for multiple types of insertion and deletion, demonstrating 
+ * how a single head pointer can be used to control the entire list 
+ * structure through various operations.
  *
- * This program combines ALL operations into one menu:
- * - Insertion (Front, End, Position)
- * - Deletion (Front, End, Position)
- * - Display
+ * ALGORITHM:
+ * 1. START
+ * 2. Initialize head = NULL.
+ * 3. Display a list of options (Insertion, Deletion, Display, Exit).
+ * 4. WHILE (true):
+ *    a. Input choice from user.
+ *    b. IF choice is INSERT: Get value and position, update head.
+ *    c. IF choice is DELETE: Update head after removing node.
+ *    d. IF choice is DISPLAY: Traverse and print the list.
+ *    e. IF choice is EXIT: Break the loop and STOP.
+ * 5. STOP
  * ============================================================
  */
 
@@ -134,3 +148,33 @@ int main() {
     }
     return 0;
 }
+
+/*
+ * ============================================================
+ * EXPECTED OUTPUT (Sample Run):
+ * =--- SINGLY LINKED LIST MENU ---
+ * 1. Insert Front    2. Insert End    3. Insert at Position
+ * 4. Delete Front    5. Delete End    6. Display
+ * 0. Exit
+ * Choice: 1
+ * Value: 10
+ *
+ * --- SINGLY LINKED LIST MENU ---
+ * Choice: 2
+ * Value: 20
+ *
+ * --- SINGLY LINKED LIST MENU ---
+ * Choice: 6
+ * List: [10] -> [20] -> NULL
+ *
+ * --- SINGLY LINKED LIST MENU ---
+ * Choice: 4
+ *
+ * --- SINGLY LINKED LIST MENU ---
+ * Choice: 6
+ * List: [20] -> NULL
+ *
+ * Choice: 0
+ * Exiting...
+ * ============================================================
+ */

@@ -5,10 +5,21 @@
  * Topic: Polynomials (Simplified Version)
  * Language: C
  * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * This program calculates the value of a polynomial for a 
+ * given value of 'x'. For example, if P(x) = 3x^2 + 2x + 5, 
+ * then evaluating at x = 2 gives: P(2) = 3(2^2) + 2(2) + 5 = 21. 
  *
- * CONCEPT:
- * Evaluation means finding the value of P(x) for a given x.
- * Example: if P(x) = 2x + 5, then P(2) = 2(2) + 5 = 9.
+ * ALGORITHM:
+ * 1. START
+ * 2. Define the polynomial coefficients in an array.
+ * 3. Get the value of 'x' to evaluate at.
+ * 4. Initialize result = 0.
+ * 5. Loop i from 0 to degree:
+ *    a. result = result + (coeff[i] * power(x, i)).
+ * 6. Print the final result.
+ * 7. STOP
  * ============================================================
  */
 
@@ -35,3 +46,14 @@ int main() {
 
     return 0;
 }
+
+/*
+ * ============================================================
+ * EXPECTED OUTPUT:
+ * === POLYNOMIAL EVALUATION ===
+ *
+ * Polynomial: 3x^2 + 2x^1 + 5x^0 
+ * Enter the value of x: 2
+ * Result of P(2) = 21.00
+ * ============================================================
+ */

@@ -2,6 +2,25 @@
  * ============================================================
  * PROGRAM 14: ADDITION THEN MULTIPLY
  * ============================================================
+ * Topic: Polynomials (Simplified Version)
+ * Language: C
+ * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * This program demonstrates a nested polynomial operation: 
+ * (P1 + P2) * P3. First, we add P1 and P2 to get an intermediate 
+ * sum polynomial, and then we multiply that sum by P3 to get the 
+ * final result.
+ *
+ * ALGORITHM:
+ * 1. START
+ * 2. Define P1, P2, and P3.
+ * 3. Calculate sum = P1 + P2.
+ * 4. Initialize Result (res) array to zero.
+ * 5. Multiply sum and P3 using nested loops: res[i+j] += sum[i] * p3[j].
+ * 6. Display the final polynomial.
+ * 7. STOP
+ * ============================================================
  */
 
 #include <stdio.h>
@@ -28,3 +47,11 @@ int main() {
 
     return 0;
 }
+
+/*
+ * ============================================================
+ * EXPECTED OUTPUT:
+ * Result of (P1 + P2) * P3:
+ * 3x^2 + 5x^1 + 2x^0 
+ * ============================================================
+ */

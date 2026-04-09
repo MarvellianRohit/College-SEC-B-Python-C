@@ -5,11 +5,25 @@
  * Topic: Sorting (Simplified)
  * Language: C
  * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * Insertion Sort works by building a sorted array one element at 
+ * a time. It takes each element from the unsorted part and 
+ * "inserts" it into its correct position in the sorted part by 
+ * shifting larger elements one position to the right. 
+ * It is similar to how you sort playing cards in your hand.
  *
- * WHAT IS INSERTION SORT?
- * It works like sorting a deck of playing cards in your hand.
- * You pick one card at a time and "insert" it into its correct 
- * position among the cards you already hold.
+ * ALGORITHM:
+ * 1. START
+ * 2. Loop i from 1 to n-1 (the element to be inserted).
+ * 3. Store the current element: key = arr[i].
+ * 4. Set j = i - 1.
+ * 5. WHILE j >= 0 AND arr[j] > key:
+ *    a. Shift arr[j] to the right: arr[j+1] = arr[j].
+ *    b. Decrement j.
+ * 6. Place the key at its correct position: arr[j+1] = key.
+ * 7. Repeat for all elements.
+ * 8. STOP
  * ============================================================
  */
 
@@ -74,5 +88,18 @@ int main() {
  *
  * Time Complexity: O(n^2) in the worst case, but O(n) in 
  * the best case (when it's already sorted).
+ * ============================================================
+ * 
+ * EXPECTED OUTPUT:
+ * === INSERTION SORT ===
+ *
+ * Original array:
+ *   [ 12 11 13 5 6 ]
+ *
+ * Pass 1: (Inserted 11 into its sorted position)
+ *   [ 11 12 13 5 6 ]
+ * ...
+ * Final Sorted array:
+ *   [ 5 6 11 12 13 ]
  * ============================================================
  */

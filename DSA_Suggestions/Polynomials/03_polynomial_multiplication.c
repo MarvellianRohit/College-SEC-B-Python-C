@@ -5,11 +5,23 @@
  * Topic: Polynomials (Simplified Version)
  * Language: C
  * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * This program multiplies two polynomials. Unlike addition, 
+ * every term in the first polynomial must be multiplied by 
+ * every term in the second.
+ * Rule: (ax^i) * (bx^j) = (a*b)x^(i+j).
+ * The resulting degree is the sum of the two original degrees.
  *
- * CONCEPT:
- * Multiplication is slightly harder. 
- * If we multiply p1[i] and p2[j], the result is stored 
- * at result[i + j].
+ * ALGORITHM:
+ * 1. START
+ * 2. Input degrees and coefficients of P1 and P2.
+ * 3. Initialize the Result array to all zeros.
+ * 4. Loop i from 0 to degree1:
+ *    a. Loop j from 0 to degree2:
+ *       i. Result[i+j] = Result[i+j] + (P1[i] * P2[j]).
+ * 5. Display the multiplied polynomial.
+ * 6. STOP
  * ============================================================
  */
 
@@ -50,3 +62,24 @@ int main() {
 
     return 0;
 }
+
+/*
+ * ============================================================
+ * EXPECTED OUTPUT:
+ * === POLYNOMIAL MULTIPLICATION ===
+ *
+ * First Polynomial:
+ * Enter degree: 1
+ *   Enter coefficient for x^0: 2
+ *   Enter coefficient for x^1: 3
+ *
+ * Second Polynomial:
+ * Enter degree: 1
+ *   Enter coefficient for x^0: 1
+ *   Enter coefficient for x^1: 2
+ *
+ * First:  3x^1 + 2x^0 
+ * Second: 2x^1 + 1x^0 
+ * Product: 6x^2 + 7x^1 + 2x^0 
+ * ============================================================
+ */

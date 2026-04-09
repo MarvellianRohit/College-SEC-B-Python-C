@@ -5,13 +5,24 @@
  * Topic: Singly Linked List (Simple Version)
  * Language: C
  * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * Traversal means visiting every node in the list starting from 
+ * the head. This is the foundation for many operations like 
+ * displaying node data, counting the number of nodes, or 
+ * searching for a specific value.
  *
- * CONCEPT:
- * Traversal means visiting every node one by one.
- * We use traversal for:
- * 1. Displaying the list.
- * 2. Counting how many nodes are there.
- * 3. Searching for a specific value.
+ * ALGORITHM (for Searching):
+ * 1. START
+ * 2. Create temp pointer starting at head.
+ * 3. Initialize position counter (pos = 1).
+ * 4. WHILE (temp != NULL):
+ *    a. IF (temp->data == target):
+ *       i. Return pos (Found).
+ *    b. Move temp to next node.
+ *    c. Increment pos.
+ * 5. Return -1 (Not Found).
+ * 6. STOP
  * ============================================================
  */
 
@@ -118,5 +129,16 @@ int main() {
  * We MUST start from the Head and check nodes one by one.
  *
  * Time Complexity: O(n) for both searching and counting.
+ * ============================================================
+ * 
+ * EXPECTED OUTPUT:
+ * === LINKED LIST: SEARCH AND COUNT ===
+ *
+ *   List: [10] -> [25] -> [50] -> [75] -> NULL
+ *
+ * Total number of nodes: 4
+ *
+ * Value 50 found at position 3.
+ * Value 100 NOT found in the list.
  * ============================================================
  */

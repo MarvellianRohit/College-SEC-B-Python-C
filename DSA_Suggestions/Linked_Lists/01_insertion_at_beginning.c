@@ -5,15 +5,19 @@
  * Topic: Singly Linked List (Simple Version)
  * Language: C
  * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * Insertion at the beginning means adding a new node before the 
+ * current head of the list. This is the fastest insertion 
+ * operation (O(1)) because we don't need to traverse the list.
  *
- * WHAT IS "INSERTION AT BEGINNING"?
- * It means adding a new node at the very FRONT of the list.
- * The new node becomes the new "HEAD".
- *
- * Steps:
- * 1. Create a new Node.
- * 2. Point new Node's 'next' to the current Head.
- * 3. The new Node is now the official Head of the list.
+ * ALGORITHM:
+ * 1. START
+ * 2. Allocate memory for a new node (newNode).
+ * 3. Assign the data value to newNode->data.
+ * 4. Point newNode->next to the current head of the list.
+ * 5. Update the head pointer to point to this newNode.
+ * 6. STOP
  * ============================================================
  */
 
@@ -93,5 +97,19 @@ int main() {
  * like a map that tells us where the next piece of data is.
  *
  * Time Complexity: O(1) - Fast because we don't need to loop.
+ * ============================================================
+ * 
+ * EXPECTED OUTPUT:
+ * === SINGLY LINKED LIST: INSERT AT FRONT ===
+ *
+ *   >> Inserted 30 at beginning.
+ *   List: [30] -> NULL
+ *   >> Inserted 20 at beginning.
+ *   List: [20] -> [30] -> NULL
+ *   >> Inserted 10 at beginning.
+ *   List: [10] -> [20] -> [30] -> NULL
+ *
+ * Final list after all insertions:
+ *   List: [10] -> [20] -> [30] -> NULL
  * ============================================================
  */

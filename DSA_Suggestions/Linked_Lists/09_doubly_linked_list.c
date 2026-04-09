@@ -5,14 +5,22 @@
  * Topic: Doubly Linked List (Simplified)
  * Language: C
  * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * A Doubly Linked List (DLL) is a complex type of linked list in 
+ * which each node contains a pointer to the next node as well 
+ * as a pointer to the previous node. This allows for traversal 
+ * in both forward and backward directions.
  *
- * WHAT IS A DOUBLY LINKED LIST?
- * A list where each node has TWO pointers:
- * 1. NEXT - points to the node after it.
- * 2. PREV - points to the node before it.
- *
- * Visual:
- * NULL <-- [10] <--> [20] <--> [30] --> NULL
+ * ALGORITHM (Insertion at Beginning):
+ * 1. START
+ * 2. Create a new Node (newNode).
+ * 3. Set newNode->data = value, newNode->prev = NULL, 
+ *    and newNode->next = head.
+ * 4. IF (head != NULL):
+ *    a. Set head->prev = newNode.
+ * 5. Update head = newNode.
+ * 6. STOP
  * ============================================================
  */
 
@@ -106,3 +114,20 @@ int main() {
 
     return 0;
 }
+
+/*
+ * ============================================================
+ * EXPECTED OUTPUT:
+ * === DOUBLY LINKED LIST ===
+ *
+ *   >> Inserted 10 at end.
+ *   >> Inserted 20 at end.
+ *   >> Inserted 30 at end.
+ *   Forward:  [10] <-> [20] <-> [30] <-> NULL
+ *   Backward: [30] <-> [20] <-> [10] <-> NULL
+ *
+ * Inserting 5 at front:
+ *   >> Inserted 5 at beginning.
+ *   Forward:  [5] <-> [10] <-> [20] <-> [30] <-> NULL
+ * ============================================================
+ */

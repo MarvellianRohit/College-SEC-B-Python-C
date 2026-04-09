@@ -2,6 +2,24 @@
  * ============================================================
  * PROGRAM 11: ADD AND SUBTRACT COMBINED
  * ============================================================
+ * Topic: Polynomials (Simplified Version)
+ * Language: C
+ * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * This program demonstrates performing two operations in a 
+ * single step: adding two polynomials and then subtracting 
+ * a third. Formula: Result = (P1 + P2) - P3.
+ *
+ * ALGORITHM:
+ * 1. START
+ * 2. Define three polynomials P1, P2, and P3.
+ * 3. Initialize a Result array.
+ * 4. For each index 'i':
+ *    a. Calculate Result[i] = (P1[i] + P2[i]) - P3[i].
+ * 5. Display the result.
+ * 6. STOP
+ * ============================================================
  */
 
 #include <stdio.h>
@@ -26,3 +44,11 @@ int main() {
 
     return 0;
 }
+
+/*
+ * ============================================================
+ * EXPECTED OUTPUT:
+ * Result of (P1 + P2) - P3:
+ *   0x^2 + 0x^1 + 0x^0 
+ * ============================================================
+ */

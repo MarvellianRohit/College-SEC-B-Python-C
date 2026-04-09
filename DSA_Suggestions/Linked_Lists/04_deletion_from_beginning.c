@@ -5,15 +5,23 @@
  * Topic: Singly Linked List (Simple Version)
  * Language: C
  * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * Deletion from the beginning involves removing the first node 
+ * of the list (the head). To do this safely, we must store the 
+ * head's address in a temporary pointer before updating the head 
+ * to point to the second node, then free the memory of the 
+ * old head.
  *
- * WHAT IS "DELETION FROM BEGINNING"?
- * Removing the very first node (the HEAD) from the list.
- *
- * Steps:
- * 1. Check if the list is empty.
- * 2. Save the current Head in a temporary pointer.
- * 3. Move Head to the next node.
- * 4. Free the memory of the old Head (using free()).
+ * ALGORITHM:
+ * 1. START
+ * 2. IF (head == NULL):
+ *    a. Print "List is empty, deletion impossible".
+ *    b. STOP.
+ * 3. Save the current head in a temporary pointer (temp = head).
+ * 4. Update head to the next node (head = head->next).
+ * 5. Free the memory assigned to the old head (free(temp)).
+ * 6. STOP
  * ============================================================
  */
 
@@ -105,5 +113,21 @@ int main() {
  * In C, memory allocated with malloc() doesn't disappear 
  * automatically. If we don't use free(), the memory stays 
  * occupied forever (this is called a "Memory Leak").
+ * ============================================================
+ * 
+ * EXPECTED OUTPUT:
+ * === SINGLY LINKED LIST: DELETE FROM FRONT ===
+ *
+ * Original list:
+ *   List: [10] -> [20] -> [30] -> NULL
+ *
+ *   >> Deleted 10 from the beginning.
+ *   List: [20] -> [30] -> NULL
+ *
+ *   >> Deleted 20 from the beginning.
+ *   List: [30] -> NULL
+ *
+ *   >> Deleted 30 from the beginning.
+ *   List: [EMPTY]
  * ============================================================
  */

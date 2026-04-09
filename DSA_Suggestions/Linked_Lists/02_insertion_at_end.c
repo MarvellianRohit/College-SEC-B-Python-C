@@ -5,17 +5,25 @@
  * Topic: Singly Linked List (Simple Version)
  * Language: C
  * Level: 1st Year BCA
+ * 
+ * DETAILED EXPLANATION:
+ * Insertion at the end means adding a new node after the current 
+ * last node. Unlike insertion at the beginning, we must traverse 
+ * (walk through) the entire list to find the current last node 
+ * before we can link it.
  *
- * WHAT IS "INSERTION AT END"?
- * It means adding a new node after the current last node.
- * Unlike insertion at beginning, we have to LOOP (traverse)
- * to find the last node first.
- *
- * Steps:
- * 1. Create a new Node.
- * 2. If the list is empty, the new Node becomes the Head.
- * 3. Otherwise, walk to the last node.
- * 4. Connect the last node's 'next' to our new Node.
+ * ALGORITHM:
+ * 1. START
+ * 2. Create a new Node (newNode) and assign data.
+ * 3. Set newNode->next = NULL.
+ * 4. IF (head == NULL):
+ *    a. Make newNode the head.
+ * 5. ELSE:
+ *    a. Create a temporary pointer 'temp' and point it to head.
+ *    b. WHILE (temp->next != NULL):
+ *       i. Move temp to the next node.
+ *    c. Set temp->next = newNode.
+ * 6. STOP
  * ============================================================
  */
 
@@ -106,5 +114,19 @@ int main() {
  * the old last node to the new one.
  *
  * Time Complexity: O(n) - We have to visit all nodes to reach the end.
+ * ============================================================
+ * 
+ * EXPECTED OUTPUT:
+ * === SINGLY LINKED LIST: INSERT AT END ===
+ *
+ *   >> Inserted 10 (first node).
+ *   List: [10] -> NULL
+ *   >> Inserted 20 at the end.
+ *   List: [10] -> [20] -> NULL
+ *   >> Inserted 30 at the end.
+ *   List: [10] -> [20] -> [30] -> NULL
+ *
+ * Final list after all insertions:
+ *   List: [10] -> [20] -> [30] -> NULL
  * ============================================================
  */
