@@ -1,0 +1,5 @@
+Python Programming Assignment.
+This file is used for practice tasks.
+Task 2 involves reading this content.
+Appending a new line to the file.
+File handling is an essential skill.
