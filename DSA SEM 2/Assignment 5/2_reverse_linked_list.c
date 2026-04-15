@@ -1,177 +1,99 @@
-#include <stdio.h>  // Standard input-output library
-#include <stdlib.h> // Library for dynamic memory allocation
+#include <stdio.h>
+#include <stdlib.h>
 
-
-// Node structure definition
-
+// Node Structure
 struct Node {
-  int data;          // Integer data part of the node
-
-  struct Node *next; // Pointer addressing the next node in the list
-
+    int data;
+    struct Node* next;
 };
 
-
 // Function prototypes
-
-struct Node *createList(int n);
-
-struct Node *reverseList(struct Node *head);
-
-void displayList(struct Node *head);
-
+struct Node* createList(int n);
+struct Node* reverseList(struct Node* head);
+void displayList(struct Node* head);
 
 int main() {
-  int n;                    // Variable to store number of nodes to create
+    int n;
+    struct Node* head = NULL;
 
-  struct Node *head = NULL; // Initial list head
+    printf("Enter number of nodes: ");
+    scanf("%d", &n);
 
-
-  printf("Enter the number of nodes to create: ");
-
-  scanf("%d", &n); // Read user input for list size
-
-
-  // If n is zero or negative, handle gracefully
-
-  if (n <= 0) {
-    printf("Invalid number of nodes.\n");
-
-    return 0;
-
-  }
-
-
-  // Step 1: Create the linked list
-
-  head = createList(n);
-
-
-  // Step 2: Display list before reversing
-
-  printf("\nList before reverse:\n");
-  displayList(head);
-
-
-  // Step 3: Reverse the list
-
-  head = reverseList(head);
-
-
-  // Step 4: Display list after reversing
-
-  printf("\nList after reverse:\n");
-
-  displayList(head);
-
-
-  return 0; // Success
-
-}
-
-
-// Function to create a linked list with 'n' elements
-
-struct Node *createList(int n) {
-  struct Node *head = NULL, *temp = NULL, *newNode = NULL;
-  int val;
-
-
-  for (int i = 1; i <= n; i++) {
-
-    // Allocate memory for each new node
-
-    newNode = (struct Node *)malloc(sizeof(struct Node));
-
-    printf("Enter data for node %d: ", i);
-    scanf("%d", &val);    // Get node data from user
-
-    newNode->data = val;  // Store data
-
-    newNode->next = NULL; // Set default next to NULL
-
-
-    if (head == NULL) {
-
-      // First node becomes the head
-
-      head = newNode;
-
-      temp = head; // 'temp' follows the pointer chain
-
-    } else {
-
-      // Successive nodes are linked to the tail
-
-      temp->next = newNode;
-
-      temp = temp->next; // Move tail pointer forward
+    if (n <= 0) {
+        printf("Invalid input!\n");
+        return 0;
     }
 
-  }
+    // Step 1: Create the list
+    head = createList(n);
 
-  return head; // Return the head of the newly created list
+    printf("\nOriginal List:\n");
+    displayList(head);
 
+    // Step 2: Reverse the list
+    head = reverseList(head);
+
+    printf("\nReversed List:\n");
+    displayList(head);
+
+    return 0;
 }
 
+// Function to create 'n' nodes
+struct Node* createList(int n) {
+    struct Node *head = NULL, *temp = NULL;
 
-// Function to reverse the linked list using iterative method
+    for (int i = 1; i <= n; i++) {
+        struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+        printf("Enter data for node %d: ", i);
+        scanf("%d", &(newNode->data));
+        newNode->next = NULL;
 
-struct Node *reverseList(struct Node *head) {
-  struct Node *prev = NULL, *current = head, *next = NULL;
-
-
-  // Iterate through the entire list
-
-  while (current != NULL) {
-    next = current->next; // Temporarily save the next node
-
-    current->next = prev; // Reverse the link: current now points backwards
-
-    prev = current;       // Move 'prev' one step forward
-    current = next;       // Move 'current' one step forward
-  }
-
-  // Loop ends when 'current' is NULL, 'prev' will be at the new first node
-
-  return prev; // Return the new head of the reversed list
-
+        if (head == NULL) {
+            head = newNode;
+            temp = head;
+        } else {
+            temp->next = newNode;
+            temp = temp->next;
+        }
+    }
+    return head;
 }
 
+// Function to reverse the list
+struct Node* reverseList(struct Node* head) {
+    /* 
+       Logic: We need 3 pointers to flip links without losing the rest of the list.
+       1. prevNode: Points to the node *before* the current one.
+       2. currentNode: Points to the node we are currently flipping.
+       3. nextNode: Temporarily stores the *next* node so we don't lose it.
+    */
+    struct Node* prevNode = NULL;
+    struct Node* currentNode = head;
+    struct Node* nextNode = NULL;
 
-// Function to display all nodes in the list
+    while (currentNode != NULL) {
+        // Step 1: Save the next node
+        nextNode = currentNode->next;
 
-void displayList(struct Node *head) {
-  struct Node *temp = head; // Start traversal from the head node
+        // Step 2: Reverse the link (current now points to previous)
+        currentNode->next = prevNode;
 
+        // Step 3: Move pointers forward
+        prevNode = currentNode;
+        currentNode = nextNode;
+    }
 
-  if (temp == NULL) {
-    printf("The list is empty.\n");
-
-    return;
-
-  }
-
-
-  // Iterate until the end of the list
-
-  while (temp != NULL) {
-    printf("%d -> ", temp->data); // Print node value
-
-    temp = temp->next;            // Advance to the next node
-
-  }
-
-  printf("NULL\n"); // End marker
-
+    // New head is the last node we processed (prevNode)
+    return prevNode;
 }
 
-/*
-Output:
-Enter the number of nodes to create: Enter data for node 1: Enter data for node 2: Enter data for node 3: Enter data for node 4: Enter data for node 5: 
-List before reverse:
-1 -> 2 -> 3 -> 4 -> 5 -> NULL
-
-List after reverse:
-5 -> 4 -> 3 -> 2 -> 1 -> NULL
-*/
+// Function to display the list
+void displayList(struct Node* head) {
+    struct Node* temp = head;
+    while (temp != NULL) {
+        printf("%d -> ", temp->data);
+        temp = temp->next;
+    }
+    printf("NULL\n");
+}
